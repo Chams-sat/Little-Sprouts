@@ -1,0 +1,55 @@
+html {
+        scroll-behavior: smooth;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      .wavy-underline {
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: #ffd93d;
+        text-underline-offset: 8px;
+        text-decoration-thickness: 3px;
+      }
+      section {
+        scroll-margin-top: 80px;
+      }
+      /* Custom Tailwind Colors */
+      :root {
+        --primary: #FF6B6B;
+        --secondary: #FFD93D;
+        --accent-blue: #4D96FF;
+        --accent-green: #6BCB77;
+        --background-light: #FFF9F0;
+        --background-dark: #1A202C;
+        --text-light: #3D3D3D;
+        --text-dark: #F0F0F0;
+        --subtle-light: #FEECEB;
+        --subtle-dark: #3D3D3D;
+        --accent-red: #E74C3C;
+      }
+      .bg-primary { background-color: var(--primary); }
+      .text-primary { color: var(--primary); }
+      .border-primary { border-color: var(--primary); }
+      .bg-secondary { background-color: var(--secondary); }
+      .text-secondary { color: var(--secondary); }
+      .border-secondary { border-color: var(--secondary); }
+      .bg-accent-blue { background-color: var(--accent-blue); }
+      .text-accent-blue { color: var(--accent-blue); }
+      .border-accent-blue { border-color: var(--accent-blue); }
+      .bg-accent-green { background-color: var(--accent-green); }
+      .text-accent-green { color: var(--accent-green); }
+      .border-accent-green { border-color: var(--accent-green); }
+      .bg-background-light { background-color: var(--background-light); }
+      .bg-background-dark { background-color: var(--background-dark); }
+      .text-text-light { color: var(--text-light); }
+      .text-text-dark { color: var(--text-dark); }
+      .bg-subtle-light { background-color: var(--subtle-light); }
+      .bg-subtle-dark { background-color: var(--subtle-dark); }
+      .border-subtle-light { border-color: var(--subtle-light); }
+      .border-subtle-dark { border-color: var(--subtle-dark); }
+      .bg-accent-red { background-color: var(--accent-red); }
+      .text-accent-red { color: var(--accent-red); }
+      .border-accent-red { border-color: var(--accent-red); }
+      .font-display { font-family: 'Fredoka', sans-serif; }
+      .font-handwriting { font-family: 'Gaegu', cursive; }

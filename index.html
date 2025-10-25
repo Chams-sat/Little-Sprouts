@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html class="light" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Little Sprouts Kindergarten</title>
+    <meta name="description" content="Little Sprouts Kindergarten offers a nurturing environment for early childhood development with play-based learning, experienced teachers, and fun activities. Enroll now!">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Gaegu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+  </head>
+
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark"
+  >
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <!-- Header/Navigation -->
+        <header
+          class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-subtle-light dark:border-subtle-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-10 py-3"
+        >
+          <div
+            class="flex items-center gap-3 text-text-light dark:text-text-dark"
+          >
+            <div class="w-10 h-10 text-primary">
+              <svg
+                fill="currentColor"
+                viewBox="0 0 50 50"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25 2C12.318 2 2 12.318 2 25s10.318 23 23 23 23-10.318 23-23S37.682 2 25 2zm-6.25 12.5h12.5c1.72 0 3.125 1.405 3.125 3.125v12.5c0 1.72-1.405 3.125-3.125 3.125h-12.5c-1.72 0-3.125-1.405-3.125-3.125v-12.5c0-1.72 1.405-3.125 3.125-3.125zM18.75 21.875v6.25h6.25v-6.25h-6.25zm12.5 0v6.25h6.25v-6.25h-6.25zM18.75 31.25v6.25h6.25v-6.25h-6.25z"
+                ></path>
+              </svg>
+            </div>
+            <h2
+              class="text-text-light dark:text-text-dark text-xl font-bold leading-tight"
+            >
+              <span data-translate="site_name">Little Sprouts</span>
+            </h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-6">
+            <div class="hidden md:flex items-center gap-8">
+              <a
+                class="text-text-light dark:text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors"
+                href="#home"
+                data-translate="home"
+                >Home</a
+              >
+              <a
+                class="text-text-light dark:text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors"
+                href="#about"
+                data-translate="about_us"
+                >About Us</a
+              >
+              <a
+                class="text-text-light dark:text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors"
+                href="#programs"
+                data-translate="programs"
+                >Programs</a
+              >
+              <a
+                class="text-text-light dark:text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors"
+                href="#news"
+                data-translate="news"
+                >News</a
+              >
+              <a
+                class="text-text-light dark:text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors"
+                href="#contact"
+                data-translate="contact"
+                >Contact</a
+              >
+            </div>
+            <button
+              id="lang-switcher"
+              class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-secondary text-text-dark text-sm font-bold leading-normal tracking-wide shadow-md hover:bg-yellow-400 transform hover:scale-105 transition-all duration-300"
+            >
+              <span class="truncate">العربية</span>
+            </button>
+            <a
+              href="#admissions"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide shadow-lg hover:bg-red-500 transform hover:scale-105 transition-all duration-300"
+            >
+              <span class="truncate" data-translate="enroll_now">Enroll Now</span>
+            </a>
+            <div class="md:hidden flex items-center">
+              <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <span class="sr-only">Open main menu</span>
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div id="mobile-menu" class="md:hidden hidden">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#home" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="home">Home</a>
+        <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="about_us">About Us</a>
+        <a href="#programs" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="programs">Programs</a>
+        <a href="#news" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="news">News</a>
+        <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="contact">Contact</a>
+    </div>
+</div>
+
+        <main class="flex-1">
+          <!-- Home/Hero Section -->
+          <section
+            id="home"
+            class="relative flex h-auto min-h-[calc(100vh-80px)] w-full flex-col justify-center items-center group/design-root overflow-x-hidden"
+          >
+            <div
+              class="flex min-h-[600px] w-full flex-col gap-8 bg-cover bg-center bg-no-repeat items-center justify-center p-4"
+              alt="Happy children playing in a colorful classroom."
+              style="
+                background-image: linear-gradient(
+                    rgba(255, 107, 107, 0.3),
+                    rgba(255, 217, 61, 0.3)
+                  ),
+                  url('https://lh3.googleusercontent.com/aida-public/AB6AXuAiK6m5vAbzY7e7y8R3L7QYgOwXYRjsRVOM0eR6oy3FeXCVvek5nL_X30ubvci9arDvUqgreZJAdra0Ps1aPcbTLRHKQtG5h3QkUTrnqW9OfbpZvZGj_JHjsgw-RlvgVGmm7tREkV9TsDYpyjURx9Sjo3YEKJfH8mKGHF2JhgeIH0L1XS-HjjizzSDGO03I97cmg2ZQyHqcMIjM18uerD_zBCrpMC-hhWRcW9UdMklQzkx6j9ZuT1dvT_Gvqj3G-sdd7QXPqEyx5x8');
+              "
+            >
+              <div class="flex flex-col gap-4 text-center max-w-4xl">
+                <h1
+                  class="text-text-light text-6xl font-bold leading-tight tracking-tighter"
+                >
+                  <span data-translate="hero_title_part1">Welcome to Little Sprouts Kindergarten:</span><br
+                    class="hidden md:block"
+                  />
+                  <span data-translate="hero_title_part2">Where</span>
+                  <span class="text-primary wavy-underline" data-translate="hero_title_highlight">Little Minds</span>
+                  <span data-translate="hero_title_part3">Blossom</span>
+                </h1>
+                <h2
+                  class="text-text-light text-xl font-normal leading-normal max-w-2xl mx-auto"
+                  data-translate="hero_subtitle"
+                >
+                  Nurturing curiosity and creativity in a fun, safe, and
+                  engaging learning environment.
+                </h2>
+              </div>
+              <a
+                href="#programs"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary text-white text-lg font-bold leading-normal tracking-wide shadow-xl hover:bg-red-500 transform hover:scale-105 transition-all duration-300"
+              >
+                <span class="truncate" data-translate="explore_our_world">Explore Our World</span>
+              </a>
+            </div>
+          </section>
+          <!-- Why Choose Us Section -->
+          <section
+            class="px-4 py-20 sm:px-6 lg:px-8 bg-background-light dark:bg-background-dark"
+          >
+            <div class="mx-auto max-w-7xl">
+              <div class="flex flex-col gap-12 @container">
+                <div class="flex flex-col gap-4 text-center">
+                  <h1
+                    class="text-text-light dark:text-text-dark tracking-light text-5xl font-bold leading-tight"
+                    data-translate="why_choose_us_title"
+                  >
+                    Why Choose Us
+                  </h1>
+                  <p
+                    class="text-text-light/80 dark:text-text-dark/80 text-lg font-normal leading-normal max-w-3xl mx-auto"
+                    data-translate="why_choose_us_subtitle"
+                  >
+                    We provide a nurturing and stimulating environment where
+                    your child can grow, learn, and thrive with a smile!
+                  </p>
+                </div>
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+                  <div
+                    class="flex flex-1 flex-col gap-6 rounded-xl border-4 border-accent-blue bg-accent-blue/10 dark:bg-accent-blue/20 p-8 text-center items-center transform hover:-translate-y-2 transition-transform duration-300"
+                  >
+                    <span
+                      class="material-symbols-outlined text-accent-blue"
+                      style="font-size: 48px"
+                      >school</span
+                    >
+                    <div class="flex flex-col gap-2">
+                      <h2
+                        class="text-text-light dark:text-text-dark text-2xl font-bold leading-tight"
+                        data-translate="experienced_teachers_title"
+                      >
+                        Experienced Teachers
+                      </h2>
+                      <p
+                        class="text-gray-700 dark:text-gray-300 text-base font-normal leading-normal"
+                        data-translate="experienced_teachers_desc"
+                      >
+                        Our dedicated and passionate educators are experts in
+                        early childhood development.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-1 flex-col gap-6 rounded-xl border-4 border-primary bg-primary/10 dark:bg-primary/20 p-8 text-center items-center transform hover:-translate-y-2 transition-transform duration-300"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary"
+                      style="font-size: 48px"
+                      >extension</span
+                    >
+                    <div class="flex flex-col gap-2">
+                      <h2
+                        class="text-text-light dark:text-text-dark text-2xl font-bold leading-tight"
+                        data-translate="play_based_learning_title"
+                      >
+                        Play-Based Learning
+                      </h2>
+                      <p
+                        class="text-gray-700 dark:text-gray-300 text-base font-normal leading-normal"
+                        data-translate="play_based_learning_desc"
+                      >
+                        We believe children learn best through play,
+                        exploration, and hands-on activities.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-1 flex-col gap-6 rounded-xl border-4 border-accent-green bg-accent-green/10 dark:bg-accent-green/20 p-8 text-center items-center transform hover:-translate-y-2 transition-transform duration-300"
+                  >
+                    <span
+                      class="material-symbols-outlined text-accent-green"
+                      style="font-size: 48px"
+                      >favorite</span
+                    >
+                    <div class="flex flex-col gap-2">
+                      <h2
+                        class="text-text-light dark:text-text-dark text-2xl font-bold leading-tight"
+                        data-translate="safe_caring_env_title"
+                      >
+                        Safe & Caring Environment
+                      </h2>
+                      <p
+                        class="text-gray-700 dark:text-gray-300 text-base font-normal leading-normal"
+                        data-translate="safe_caring_env_desc"
+                      >
+                        Your child's safety and well-being are our top
+                        priorities in our secure and loving setting.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Programs Section -->
+          <section
+            id="programs"
+            class="bg-subtle-light dark:bg-subtle-dark/20 px-4 py-20 sm:px-6 lg:px-8"
+          >
+            <div class="mx-auto max-w-7xl">
+              <h2
+                class="text-text-light dark:text-text-dark text-5xl font-bold leading-tight pb-12 text-center"
+                data-translate="our_programs_title"
+              >
+                Our Programs
+              </h2>
+              <div class="flex flex-col max-w-4xl mx-auto gap-4">
+                <details
+                  class="flex flex-col border-b-4 border-accent-green rounded-lg bg-white dark:bg-gray-800 p-4 group"
+                  open=""
+                >
+                  <summary
+                    class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none"
+                  >
+                    <p
+                      class="text-text-light dark:text-text-dark text-xl font-bold"
+                      data-translate="toddlers_title"
+                    >
+                      Toddlers (1-2 years)
+                    </p>
+                    <span
+                      class="material-symbols-outlined text-accent-green transform transition-transform duration-300 group-open:rotate-180"
+                      >expand_more</span
+                    >
+                  </summary>
+                  <p
+                    class="text-gray-600 dark:text-gray-300 text-base font-normal leading-relaxed pt-2"
+                    data-translate="toddlers_desc"
+                  >
+                    Our toddler program focuses on sensory exploration, language
+                    development, and social skills in a safe and nurturing
+                    environment. We encourage curiosity and independence through
+                    age-appropriate activities and play.
+                  </p>
+                </details>
+                <details
+                  class="flex flex-col border-b-4 border-accent-blue rounded-lg bg-white dark:bg-gray-800 p-4 group"
+                >
+                  <summary
+                    class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none"
+                  >
+                    <p
+                      class="text-text-light dark:text-text-dark text-xl font-bold"
+                      data-translate="preschool_title"
+                    >
+                      Preschool (3-4 years)
+                    </p>
+                    <span
+                      class="material-symbols-outlined text-accent-blue transform transition-transform duration-300 group-open:rotate-180"
+                      >expand_more</span
+                    >
+                  </summary>
+                  <p
+                    class="text-gray-600 dark:text-gray-300 text-base font-normal leading-relaxed pt-2"
+                    data-translate="preschool_desc"
+                  >
+                    Our preschool program builds on foundational skills,
+                    introducing pre-reading, pre-writing, and math concepts
+                    through engaging, theme-based activities. We foster
+                    social-emotional growth and a love for learning.
+                  </p>
+                </details>
+                <details
+                  class="flex flex-col border-b-4 border-primary rounded-lg bg-white dark:bg-gray-800 p-4 group"
+                >
+                  <summary
+                    class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none"
+                  >
+                    <p
+                      class="text-text-light dark:text-text-dark text-xl font-bold"
+                      data-translate="prek_title"
+                    >
+                      Pre-K (4-5 years)
+                    </p>
+                    <span
+                      class="material-symbols-outlined text-primary transform transition-transform duration-300 group-open:rotate-180"
+                      >expand_more</span
+                    >
+                  </summary>
+                  <p
+                    class="text-gray-600 dark:text-gray-300 text-base font-normal leading-relaxed pt-2"
+                    data-translate="prek_desc"
+                  >
+                    Our Pre-K program is designed to prepare children for
+                    kindergarten. We focus on developing literacy, numeracy, and
+                    critical thinking skills, ensuring a smooth transition to
+                    elementary school.
+                  </p>
+                </details>
+              </div>
+            </div>
+            <div class="py-16 max-w-7xl mx-auto">
+              <h2
+                class="text-text-light dark:text-text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
+                data-translate="daily_adventures_title"
+              >
+                Our Daily Adventures
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-10 p-4">
+                <div
+                  class="flex flex-col items-center text-center p-8 bg-accent-green rounded-xl shadow-lg border-4 border-text-light dark:border-text-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <span
+                    class="material-symbols-outlined text-white text-6xl mb-4"
+                    >draw</span
+                  >
+                  <h3 class="text-white text-2xl font-bold mb-2" data-translate="art_giggles_title">
+                    Art & Giggles
+                  </h3>
+                  <p class="text-white" data-translate="art_giggles_desc">
+                    Splashing paint, moulding clay, and creating masterpieces.
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center text-center p-8 bg-primary rounded-xl shadow-lg border-4 border-text-light dark:border-text-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <span
+                    class="material-symbols-outlined text-white text-6xl mb-4"
+                    >music_note</span
+                  >
+                  <h3 class="text-white text-2xl font-bold mb-2" data-translate="jingles_wiggles_title">
+                    Jingles & Wiggles
+                  </h3>
+                  <p class="text-white" data-translate="jingles_wiggles_desc">
+                    Singing songs, dancing around, and playing instruments.
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center text-center p-8 bg-accent-blue rounded-xl shadow-lg border-4 border-text-light dark:border-text-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <span
+                    class="material-symbols-outlined text-text-light text-6xl mb-4"
+                    >park</span
+                  >
+                  <h3 class="text-text-light text-2xl font-bold mb-2" data-translate="outdoor_fun_title">
+                    Outdoor Fun
+                  </h3>
+                  <p class="text-text-light" data-translate="outdoor_fun_desc">
+                    Exploring nature, running free, and soaking up the sun.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="py-16 max-w-7xl mx-auto">
+              <h2
+                class="text-text-light dark:text-text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
+                data-translate="daily_rhythm_title"
+              >
+                Our Daily Rhythm
+              </h2>
+              <div class="relative px-4">
+                <div
+                  class="absolute left-1/2 top-0 h-full w-1 bg-text-dark transform -translate-x-1/2"
+                ></div>
+                <div class="space-y-12">
+                  <div class="flex items-center w-full">
+                    <div class="w-1/2 flex justify-end pr-10">
+                      <div
+                        class="p-6 bg-white rounded-xl shadow-playful border-4 border-text-dark w-full max-w-sm text-right"
+                      >
+                        <p class="text-accent-red font-semiebold text-lg" data-translate="time_900">
+                          9:00 AM
+                        </p>
+                        <h3
+                          class="text-2xl font-display text-dark dark:text mt-1"
+                          data-translate="hello_sunshine_title"
+                        >
+                          Hello Sunshine!
+                        </h3>
+                        <p class="text-dark dark:text-dark-400 mt-2 font-body" data-translate="hello_sunshine_desc">
+                          A warm welcome with songs and stories.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="w-1/2 flex justify-start pl-8">
+                      <div
+                        class="w-10 h-10 rounded-full bg-accent-red ring-4 ring-background-dark dark:ring-background-dark border-4 border-text-dark"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="flex items-center w-full">
+                    <div class="w-1/2 flex justify-end pr-8">
+                      <div
+                        class="w-10 h-10 rounded-full bg-accent-green ring-4 ring-background-dark dark:ring-background-dark border-4 border-text-dark"
+                      ></div>
+                    </div>
+                    <div class="w-1/2 flex justify-start pl-10">
+                      <div
+                        class="p-6 bg-white rounded-xl shadow-playful border-4 border-text-dark w-full max-w-sm"
+                      >
+                        <p class="text-accent-green font-semiebold text-lg" data-translate="time_930">
+                          9:30 AM
+                        </p>
+                        <h3
+                          class="text-2xl font-display text-dark dark:text-dark mt-1"
+                          data-translate="creative_play_title"
+                        >
+                          Creative Play
+                        </h3>
+                        <p class="text-dark dark:text-dark-400 mt-2 font-body" data-translate="creative_play_desc">
+                          Time to get messy with arts and crafts.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-center w-full">
+                    <div class="w-1/2 flex justify-end pr-10">
+                      <div
+                        class="p-6 bg-white rounded-xl shadow-playful border-4 border-text-dark w-full max-w-sm text-right"
+                      >
+                        <p class="text-secondary font-semiebold text-lg" data-translate="time_1030">
+                          10:30 AM
+                        </p>
+                        <h3
+                          class="text-2xl font-display text-dark dark:text-dark mt-1"
+                          data-translate="garden_adventures_title"
+                        >
+                          Garden Adventures
+                        </h3>
+                        <p class="text-dark dark:text-dark-400 mt-2 font-body" data-translate="garden_adventures_desc">
+                          Fresh air and fun in our playground.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="w-1/2 flex justify-start pl-8">
+                      <div
+                        class="w-10 h-10 rounded-full bg-secondary ring-4 ring-background-dark dark:ring-background-dark border-4 border-text-dark"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="flex items-center w-full">
+                    <div class="w-1/2 flex justify-end pr-8">
+                      <div
+                        class="w-10 h-10 rounded-full bg-accent-red ring-4 ring-background-dark dark:ring-background-dark border-4 border-text-dark"
+                      ></div>
+                    </div>
+                    <div class="w-1/2 flex justify-start pl-10">
+                      <div
+                        class="p-6 bg-white rounded-xl shadow-playful border-4 border-text-dark w-full max-w-sm"
+                      >
+                        <p class="text-accent-red font-semiebold text-lg" data-translate="time_1130">
+                          11:30 AM
+                        </p>
+                        <h3
+                          class="text-2xl font-display text-dark dark:text-dark mt-1"
+                          data-translate="story_land_title"
+                        >
+                          Story Land
+                        </h3>
+                        <p class="text-dark dark:text-dark-400 mt-2 font-body" data-translate="story_land_desc">
+                          Gathering for magical tales and rhymes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- About Us Section -->
+          <section
+            id="about"
+            class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-12 text-center bg-background-light dark:bg-background-dark/20"
+          >
+            <h2
+              class="text-text-light dark:text-text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
+              data-translate="mission_vision_title"
+            >
+              Our Mission & Vision
+            </h2>
+            <p
+              class="text-text-light/80 dark:text-text-dark/80 text-lg font-normal leading-relaxed pb-3 pt-1 px-4 max-w-4xl mx-auto"
+              data-translate="mission_vision_desc"
+            >
+              Our mission is to create a joyful, safe, and colorful world where
+              every child feels loved, valued, and excited to learn. We envision
+              a community of happy, kind, and creative problem-solvers, ready to
+              paint their own bright futures!
+            </p>
+
+            <div class="py-16">
+              <h2
+                class="text-text-light dark:text-text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
+                data-translate="core_values_title"
+              >
+                Our Core Values
+              </h2>
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto"
+              >
+                <div
+                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[-2deg]"
+                >
+                  <div class="p-4 bg-primary/20 rounded-full mb-4">
+                    <span
+                      class="material-symbols-outlined text-5xl text-primary"
+                      >palette</span
+                    >
+                  </div>
+                  <h3 class="text-dark text-2xl font-bold mb-2" data-translate="creativity_title">Creativity</h3>
+                  <p class="text-gray-600 dark:text-gray-400" data-translate="creativity_desc">
+                    Splashing paint, singing songs, and building worlds from our
+                    wildest dreams.
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[2deg]"
+                >
+                  <div class="p-4 bg-secondary/20 rounded-full mb-4">
+                    <span
+                      class="material-symbols-outlined text-5xl text-secondary"
+                      >groups</span
+                    >
+                  </div>
+                  <h3 class="text-dark text-2xl font-bold mb-2" data-translate="community_title">Community</h3>
+                  <p class="text-gray-600 dark:text-gray-400" data-translate="community_desc">
+                    Sharing smiles, helping friends, and growing together like a
+                    big, happy family.
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[-2deg]"
+                >
+                  <div class="p-4 bg-accent-green/20 rounded-full mb-4">
+                    <span
+                      class="material-symbols-outlined text-5xl text-accent-green"
+                      >favorite</span
+                    >
+                  </div>
+                  <h3 class="text-dark text-2xl font-bold mb-2" data-translate="kindness_title">Kindness</h3>
+                  <p class="text-gray-600 dark:text-gray-400" data-translate="kindness_desc">
+                    Using kind words, giving warm hugs, and celebrating what
+                    makes each of us special.
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[2deg]"
+                >
+                  <div class="p-4 bg-accent-blue/20 rounded-full mb-4">
+                    <span
+                      class="material-symbols-outlined text-5xl text-accent-blue"
+                      >rocket_launch</span
+                    >
+                  </div>
+                  <h3 class="text-dark text-2xl font-bold mb-2" data-translate="playful_learning_title_alt">
+                    Playful Learning
+                  </h3>
+                  <p class="text-gray-600 dark:text-gray-400" data-translate="playful_learning_desc_alt">
+                    Discovering the world through giggles, games, and grand
+                    adventures.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-16 bg-white dark:bg-background-dark max-w-7xl mx-auto rounded-xl shadow-lg"
+            >
+              <h2
+                class="text-text-light dark:text-text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
+                data-translate="meet_staff_title"
+              >
+                Meet Our Super Staff!
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div
+                  class="bg-white dark:bg-subtle-dark rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-primary"
+                >
+                  <img
+                    class="w-full h-72 object-cover"
+                    alt="Friendly photo of the Director, Jane Doe"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI_IWeZaR9lZdlsiHt6FwHDgKLTUTPBR1i67RclmoaResWCsdXuX1vV60lzdacBCsbMe7Tb1go2p6MWyGSOscIVkmNhEiUwSpJHOMqXIZsLS9RdMB9YK3Do0h8t_Oa3ey9a-iqKyBzVDAUFIXjpzTdgujh1sHaAn_yqjkIGra3xfMs0B6U8QakiBmRPF0c3YdPfYFchS9I3x48bFSEqQP8hhzfdPsarC_90g7-soJFHH0jh0rl9hoGxf4zsetwriBRHHlunpSWS_w"
+                  />
+                  <div class="p-6 text-center">
+                    <h3 class="text-dark text-2xl font-bold mb-2" data-translate="jane_doe_name">Jane Doe</h3>
+                    <p class="text-primary font-semibold mb-2 text-lg" data-translate="jane_doe_role">
+                      Director & Head Explorer
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm" data-translate="jane_doe_bio">
+                      "With 15 years of adventures in early education, I love
+                      creating a magical space where every child can sparkle!"
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="bg-white dark:bg-subtle-dark rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-accent-blue"
+                >
+                  <img
+                    class="w-full h-72 object-cover"
+                    alt="Friendly photo of a Lead Teacher, John Smith"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTJmhSZDt4SHScPtdqZbSBxK6A7hAAA1Bdv_F8hVMLBQSKwApWmcFa1BoQ-REQP64IB0GC3OTInDx4rxuV-v6kRTLMFxw1cjxa4H6S9KxsKKU1PF8fMPxeR_HRDtZH1Y-zvJmJRcLBTl4w7YJAX4PXiPm-vcz-5zeGoYscNOJqN6qmNy8yCS7zYnPBdx1-PFZeMnh-5X3Aov9KIDbGhA-rYoD-fL6JDfPHIXcSQLh0LDwcKGFjUkpP-C0NUHt6NXcTcqHInfAJokc"
+                  />
+                  <div class="p-6 text-center">
+                    <h3 class="text-dark text-2xl font-bold mb-2" data-translate="john_smith_name">
+                      John Smith
+                    </h3>
+                    <p class="text-accent-blue font-semibold mb-2 text-lg" data-translate="john_smith_role">
+                      Lead Teacher & Chief Storyteller
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm" data-translate="john_smith_bio">
+                      "My mission is to spark endless curiosity with silly
+                      songs, messy art, and stories that leap off the page!"
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="bg-white dark:bg-subtle-dark rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-accent-green"
+                >
+                  <img
+                    class="w-full h-72 object-cover"
+                    data-alt="Friendly photo of an Assistant Teacher, Emily White"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5gAq0LryQwINsVkEw6Uttd4Rmb_0CvdsUf5IK68gGg1hDIFPamInUGwGYE_A0dOvCqsMTw97MnBh596Y3yENBi_W7VBnvUfqiWy2N7NJX43VH7i5FrPRyqY85friOEZbVTSgGORUmTIiM5ic_m1Ea6OUyg3B9XQyt4hkG2foCuIbBKrRKWLKYRgiq5yQEQYQLhBj1uM2ukd4HSealrIFrmTcropkECoyDYzM7hHfkEpVI83PrMGbzqUD9LSvTIw1Zqld30vhWW0c"
+                  />
+                  <div class="p-6 text-center">
+                    <h3 class="text-dark text-2xl font-bold mb-2" data-translate="emily_white_name">
+                      Emily White
+                    </h3>
+                    <p class="text-accent-green font-semibold mb-2 text-lg" data-translate="emily_white_role">
+                      Assistant Teacher & Fun Champion
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm" data-translate="emily_white_bio">
+                      "I love seeing little faces light up with confidence as
+                      they build, create, and make new friends every day."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Testimonials Section -->
+          <section
+            class="px-4 py-20 sm:px-6 lg:px-8 bg-background-light dark:bg-background-dark"
+          >
+            <div class="mx-auto max-w-7xl text-center">
+              <h2
+                class="text-text-light dark:text-text-dark text-5xl font-bold leading-tight pb-12"
+                data-translate="what_parents_say_title"
+              >
+                What Parents Say
+              </h2>
+              <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div
+                  class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                >
+                  <img
+                    alt="Parent photo"
+                    class="w-20 h-20 rounded-full mx-auto mb-4 object-cover border-4 border-secondary"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaU1LW7cbbAjBiYunW74EQAujzyUvDATNgYOlQ0fk53fTymjwpag0ahXrF4VBOMhORGCsHzqRLAA9TFIZwUOVzQcYCdfiKuH6g1o883vDu_R0OnLrZsrFTItPsKZlDBBRK0nhIarByMUjeuonRMGKO8h98awYjrrHli7Sh9l8IjohQ7YhTk5IsVzO0AohMvvyRRPAio96rplSvFBi81vcpmixL8ENtiRwTc3q8sVJRWHzZuq_2aB5EX-zUh5cxcwBkV1RpdBCjSZ0"
+                  />
+                  <p
+                    class="text-gray-600 dark:text-gray-300 italic text-lg mb-4"
+                    data-translate="testimonial1_text"
+                  >
+                    "Little Sprouts has been a second home for our daughter. The
+                    teachers are incredibly caring and attentive."
+                  </p>
+                  <p class="font-bold text-text-light dark:text-text-dark" data-translate="testimonial1_family">
+                    - The Smith Family
+                  </p>
+                </div>
+                <div
+                  class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                >
+                  <img
+                    alt="Parent photo"
+                    class="w-20 h-20 rounded-full mx-auto mb-4 object-cover border-4 border-secondary"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD38wyrluVx9mmEzs2aZFZMoGsWonNRH3DDIW7V5R3ztSJQkcZMrz-Pcxl4QgAfbegQ3NtOZOE8nT0A_X19Zc6fnHLNhq8AyI2O9nj7xOcqDkF56x2dw0x0I5SZloBL3VTqrS7PdFuLq30fH1avwViVkNUrVpqfMucUTSb-aBEj6vmr3OlA-gR2Prx2E_A-RueHIEjqcdV7Oz6P93VtVUfuhgvxF0-dN7STRa3oKI2n8q-riCVntNfj5Gp_JHxdq7fJ-tjyL9MTSdw"
+                  />
+                  <p
+                    class="text-gray-600 dark:text-gray-300 italic text-lg mb-4"
+                    data-translate="testimonial2_text"
+                  >
+                    "We are so impressed with the play-based curriculum. Our son
+                    is learning so much while having fun!"
+                  </p>
+                  <p class="font-bold text-text-light dark:text-text-dark" data-translate="testimonial2_family">
+                    - The Johnson Family
+                  </p>
+                </div>
+                <div
+                  class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                >
+                  <img
+                    alt="Parent photo"
+                    class="w-20 h-20 rounded-full mx-auto mb-4 object-cover border-4 border-secondary"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPUcI8sVWf3vcp_aRdicM80RYanYCa91tnoh65ByBWZBEC8frzu_E3IhKDM4kyL4y55N2Nb_3Z_R8aFFyAwkQt_COQ63hI4XryL41gYiwHTa5P9tlVznsAA_t3Ua1ZylUFbMZRPgN4822CzYB53Xf8aYhHllRG8nu68xHZS7AlIxaUjJTszsNAdV-kgk-O43aKA7gve2iEeNpjpiAJjKQvV_dPdKvph5wpxie_ueZ7p9H7bNxAfLejtY6lPRiT-DMAQUb9Z4TX-gg"
+                  />
+                  <p
+                    class="text-gray-600 dark:text-gray-300 italic text-lg mb-4"
+                    data-translate="testimonial3_text"
+                  >
+                    "The facilities are clean, safe, and welcoming. We couldn't
+                    be happier with our choice."
+                  </p>
+                  <p class="font-bold text-text-light dark:text-text-dark" data-translate="testimonial3_family">
+                    - The Williams Family
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Gallery Section -->
+          <section
+            class="bg-subtle-light dark:bg-subtle-dark/20 px-4 py-20 sm:px-6 lg:px-8"
+          >
+            <div class="mx-auto max-w-7xl text-center">
+              <h2
+                class="text-text-light dark:text-text-dark text-5xl font-bold leading-tight pb-12"
+                data-translate="gallery_title"
+              >
+                Our Gallery of Smiles
+              </h2>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="grid gap-4">
+                  <div>
+                    <img
+                      class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
+                      data-alt="Children painting together."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW1IE7-SuG-PVIgzazBAoEZJX1GjskBR2uRylix-uGyLvsOfCT_uesxTQ2EG4x7WMwhLlN0_X3jxNrbVtvxnsYSR0Tnog68sB7gcUzcw6IyR-LVZ6Pj6cxUV3DdPLW9AUuXfMoRuwqE66gfozXlPS-l5DvVLoPHsSW_N0mdH2xJGYH0mHDayLPcvff2tPuV3QGK6ZVKh2GCSdQRak2J5xOsGmnTGFpf_E9xLDHRCz-skVS9wbdQCok_Evo6F6dT2iqHUWcTPpwEgc"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
+                      data-alt="Teacher reading a story to a group of children."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR0m6Aa5T62ILetR0YviUH_yQlxXnUCYOsL7PJJEKmTtn9vwrF9-lefdj3Hhsp3KTgBlAo5VO8-b4jMdvhySAFLEnm3OsXM8zJ4OSuNN8x_dEC4R66PAL1n2j8AfCg8OSBe9kbEveVFx-HMmR-SIeeLDeCPQxSEhXJGOxMdl7LRjQsBlyu89_2FJIX3vxYQyPQg_jaUSHgWK-D9O4sn5to5FOfx-manf8u2AaFfzQ4tMrL5J3hJ3V5ZitjbsoUBxgTEiWNk4sxSlc"
+                    />
+                  </div>
+                </div>
+                <div class="grid gap-4">
+                  <div>
+                    <img
+                      class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
+                      data-alt="Children playing with blocks on the floor."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdyznrAGva1OBT5XbtfpdmCTUacztLb5h2_JvYXodukKmJxrJVMhLT9OFT5EGrbiUTRDnji5Qz7ZIJBFAFTF5aNjqnuPHv3Iq5Gc1DKE8hIUYGq3ubNu_paYYuA5f9nMPCwjOWkhC9s0VZGV2Vbo3NZ4wE-wd3Tt_5T3XHo6Uu9jlAFRvm3N2JTR-WGJO-nS0_gZBGBuOerik4DD4i8c4vLsBds26zMJlCNn9OIAusfuA-Sbs6LDRNclSLtoJMScpXF4XTkQlgy4M"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
+                      data-alt="Outdoor playground with kids on swings."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuB81MtmTkekzLGMUA3D_1rUUGju97AyS6bCKmO0zO001vqxh3XymzAMVJxhZw2XM63cDustQZMFLhAFgC70hpdEiWO3HGcPzKdOlA9Z_4RFsNGcg9z9j-vVVdO5JXdbW_a63VhSct5Al41BHfaGY_j0dZsXCUxKce7tCEc9NcmVzDRoYoVhwFcqerepEQGXrBhNwsXWM-_8JCzRkv-6oTPfqEZDv0VVRYYmNYcTC9I_MobwM1NdZ4wRO-Yev0CyvO7uwAmUu4eQiZ4"
+                    />
+                  </div>
+                </div>
+                <div class="grid gap-4">
+                  <div>
+                    <img
+                      class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
+                      data-alt="Children doing a science experiment."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQO0whpBCKDTpMq9KNuLPgZsvsRRwi9wz5YGQsGoLE30prpMCAnzmjKLgtWrglg7Xw1vouULmC-ZzFV65VndsVU37a7eWoxz_wUkxkRrw12Z44YdYO9u_YXn4sQYdGbbDbPoykrInRKQEJoAdIlw2WEMAahh1i109GM46bZMMnF1qA9jbBV32kBFL0FWlMDNBbU3Y9KyAvY3EqkklQGdxCfGrqXLunKWQZ0L5d856XKTKclbG6h7A9rJMEbf5fKTwzM96PzM4mHu8"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
+                      data-alt="A colorful classroom with art supplies."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUpK08WCnHqJxmmvDgo2hC1oXlGZlk4oOeDOuzWObb1xkcK8E7jraYDRAHMH0LD7bGvyItxkDxhA8CEY18bbNvDdJTWYyT3TXzD8-pCK7ZT9THSE3abb5toT60ly151u0QuPnv2CQtDumYkqZm0_VvmxktiODtjsLj96TA31ufhkiBiM7ZxSbcso0C2W2be-IduQZm69B3fc3XNtYFKvcfaa_M3BOYjS4blR-XPeeO7-WfF6mNYEjQ5Ta5iaXS58DBdeg1umFI258"
+                    />
+                  </div>
+                </div>
+                <div class="grid gap-4">
+                  <div>
+                    <img
+                      class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
+                      data-alt="Smiling child holding a drawing."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAqK_paBrD_BzQe2o6PmaB-tFoPStvXSnixv5xO03f8JjBC-enprTV_Mpz7O_FQgH4QL4HqMn9a7jSB7YYFH7oeX954Ze6hSB-dtKRPTH1MLKMdYDEog83xBvZd_DBzvGTUUBwFHAqAIkUG6ib_Ty0-1mPnvZkGP13qWVLl2z0SLUtz1ZmiYJQGDuFWU49FLv2UrFDYjExkCmuNB7kkmpctHcMjhISnTCw4xdCS6ftf1cB0iOt9nWazTa0eK4_u7mSZEH9cD0lQp4"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
+                      data-alt="Group of kids sitting in a circle for a lesson."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj--dvgEhKDDMqWxPYWUGPqRu4EsSUT3r3rUal77_WrK8cjpwwIqluf5hKPw3jkOILiNh8VUSWlKZsLzjwZwAxRbHQtnKiBbo2GUfaXBUCFe6vQP3VAa-JJcPTkoaFli6lApiTGNguWJ9s9Ylix0dyVb_DEqyuigBaeoScZlL9c2cn-WlcKhVkXYyQObwh0Fn7HvQaM8TME5JatSF9ukc6X04pn2-_k9Lw_P6fwDFrmECExOvstr27KdhAY3KxHovcn-mJwu4OsJE"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-4 py-20 sm:px-6 lg:px-8 dark:bg-accent-blue/20">
+              <div class="mx-auto max-w-2xl text-center">
+                <h2
+                  class="text-4xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-5xl"
+                  data-translate="schedule_visit_title"
+                >
+                  Schedule a Visit Today!
+                </h2>
+                <p
+                  class="mt-6 text-lg leading-8 text-gray-700 dark:text-gray-300"
+                  data-translate="schedule_visit_desc"
+                >
+                  Come see our wonderful kindergarten for yourself. We'd love to
+                  show you around and answer all your questions.
+                </p>
+                <div class="mt-10 flex items-center justify-center gap-x-6">
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary text-white text-lg font-bold leading-normal tracking-wide shadow-lg hover:bg-red-500 transform hover:scale-105 transition-all duration-300"
+                  >
+                    <span class="truncate" data-translate="book_tour">Book a Tour</span>
+                  </button>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-secondary text-text-light text-lg font-bold leading-normal tracking-wide shadow-lg hover:bg-yellow-400 transform hover:scale-105 transition-all duration-300"
+                  >
+                    <span class="truncate" data-translate="download_handbook">Download Handbook</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Newsletter Section -->
+          <section id="news" class="px-4 py-16 bg-light/10">
+            <div class="px-4 py-8">
+              <h2
+                class="text-text-light dark:text-text-dark text-5xl text-center font-bold leading-tight pb-12"
+                data-translate="our_news_title"
+              >
+                Our News
+              </h2>
+              <div
+                class="flex flex-col md:flex-row gap-6 justify-between items-center"
+              >
+                <div class="w-full md:w-2/3">
+                  <label class="flex flex-col min-w-40 h-14 w-full">
+                    <div
+                      class="flex w-full flex-1 items-stretch rounded-full h-full shadow-md"
+                    >
+                      <div
+                        class="text-white flex border-none bg-secondary items-center justify-center pl-5 pr-3 rounded-l-full border-r-0"
+                      >
+                        <span class="material-symbols-outlined">search</span>
+                      </div>
+                      <input
+                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-full text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-none bg-white dark:bg-background-dark focus:border-none h-full placeholder:text-text-light/70 dark:placeholder:text-text-dark/70 px-4 text-base font-medium leading-normal"
+                        placeholder="Find fun news & events..."
+                        data-translate="find_news_placeholder"
+                        value=""
+                      />
+                    </div>
+                  </label>
+                </div>
+                <div class="flex gap-4 flex-wrap justify-center">
+                  <button
+                    class="flex h-12 shrink-0 items-center justify-center gap-x-2.5 rounded-full bg-primary text-text-light px-6 shadow-md transform hover:scale-105 transition-transform"
+                  >
+                    <p class="text-base font-bold leading-normal" data-translate="news_tab">News</p>
+                  </button>
+                  <button
+                    class="flex h-12 shrink-0 items-center justify-center gap-x-2.5 rounded-full bg-white dark:bg-neutral/30 px-6 text-text-light dark:text-text-dark shadow-md transform hover:scale-105 transition-transform"
+                  >
+                    <p class="text-base font-bold leading-normal" data-translate="events_tab">Events</p>
+                  </button>
+                  <button
+                    class="flex h-12 shrink-0 items-center justify-center gap-x-2.5 rounded-full bg-white dark:bg-neutral/30 px-6 text-text-light dark:text-text-dark shadow-md transform hover:scale-105 transition-transform"
+                  >
+                    <p class="text-base font-bold leading-normal" data-translate="holidays_tab">Holidays</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+              <div class="lg:col-span-2 space-y-8">
+                <h2
+                  class="text-4xl font-bold wavy-underline text-neutral dark:text-primary"
+                  data-translate="latest_news_title"
+                >
+                  Latest News & Giggles
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div
+                    class="bg-white dark:bg-neutral/20 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
+                  >
+                    <img
+                      class="h-52 w-full object-cover"
+                      data-alt="Children running in a field for sports day"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgtppaUiVb-motdxUtWt3X9nZO_y1jbq2om1dXzvqmnZdRNLdea4Jd98eFTIHu4jh2_rTMXW-WNnk3gBMDFIwbk-gZ8eW_loWM9o8-x6LPo_6YoWQ2c5GsVtSGTfncLXYdSFHhFz4bIifg36FKv64Xdb1a5U6RsLK4tg2qY2Aw-kHvZWPETu0i5qYzMmt0gzWZGLr7urg59684YlyvghK6RkJrkFPmTgBDRV-CTmME5Y2bePnzRBKW1Ew45fZbIY0oT7A4wM7tFRU"
+                    />
+                    <div class="p-6">
+                      <p
+                        class="text-sm font-medium text-accent dark:text-accent"
+                        data-translate="news1_date"
+                      >
+                        September 25, 2024
+                      </p>
+                      <h3
+                        class="text-xl font-bold mt-2 text-neutral dark:text-white"
+                        data-translate="news1_title"
+                      >
+                        Annual Sports Day Fun!
+                      </h3>
+                      <p class="mt-3 text-text-light/80 dark:text-text-dark/80" data-translate="news1_desc">
+                        Get ready for a day of fun and games! Our Annual Sports
+                        Day is just around the corner. Join us for a day of
+                        healthy competition.
+                      </p>
+                      <a
+                        class="text-secondary font-bold mt-4 inline-block hover:underline"
+                        href="#"
+                        data-translate="read_more"
+                        >Read More →</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white dark:bg-neutral/20 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
+                  >
+                    <img
+                      class="h-52 w-full object-cover"
+                      data-alt="A classroom with a teacher talking to a parent"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBeYlUVkYi1mEUH_3obGGnIkMojuTs3jd5EaKPagfYzqawnnah0jHLLVE9hAONwOEkGzi_fqTDDQDYnnNy5j3l86mIXpXt5qF3XcbMTCYHZ5QThfnz1r5oewlXR8atTYxIQUs0Zd5URFuo39ijIW-GQp9NZnjjZ0gBMAIb43L6kMrhwiOjjXqJgM0pKEPRJ40ekAy_NLdha0r_u1CxLqlSNadQeRY8vHbxypXRIwjX8fMLnAAsdbOCl_oMqB898aHIZ4MqxpcuRug"
+                    />
+                    <div class="p-6">
+                      <p
+                        class="text-sm font-medium text-accent dark:text-accent"
+                        data-translate="news2_date"
+                      >
+                        September 20, 2024
+                      </p>
+                      <h3
+                        class="text-xl font-bold mt-2 text-neutral dark:text-white"
+                        data-translate="news2_title"
+                      >
+                        Parent-Teacher Chit-Chats
+                      </h3>
+                      <p class="mt-3 text-text-light/80 dark:text-text-dark/80" data-translate="news2_desc">
+                        We invite all parents to attend the upcoming
+                        Parent-Teacher meetings to discuss your child's progress
+                        and development.
+                      </p>
+                      <a
+                        class="text-secondary font-bold mt-4 inline-block hover:underline"
+                        href="#"
+                        data-translate="read_more"
+                        >Read More →</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white dark:bg-neutral/20 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
+                  >
+                    <img
+                      class="h-52 w-full object-cover"
+                      data-alt="Colorful handprints on a wall, art and craft fair"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwvRoXxeCFmc5zzp5BJCTS3fgh2r4SGI0Ek913Stnyt-jfPpoTVaegd9qvHUqZHDHsblaA2GQbJ7H5Q3Hz8N3n40f_FFH_tlXBJeg5B7TvFYo3fIstoUhTo1coed0rblMtJIzJAEmM2fDnA2InagJS7AYgy7_jM_FFFxFpj4JbRpGSTyhmX9NRIBRvmi0Jla8YGwVl8zFXakqXBzWZNobauenBSffNbpeopB-13KQLjyO6bTwNIaBrEWXG6dEC3K-GHTqu8HPlQwE"
+                    />
+                    <div class="p-6">
+                      <p
+                        class="text-sm font-medium text-accent dark:text-accent"
+                        data-translate="news3_date"
+                      >
+                        September 15, 2024
+                      </p>
+                      <h3
+                        class="text-xl font-bold mt-2 text-neutral dark:text-white"
+                        data-translate="news3_title"
+                      >
+                        Artsy-Crafty Fair
+                      </h3>
+                      <p class="mt-3 text-text-light/80 dark:text-text-dark/80" data-translate="news3_desc">
+                        Come and see the amazing creations of our talented
+                        little artists at the annual Art and Craft Fair. A
+                        vibrant display of creativity!
+                      </p>
+                      <a
+                        class="text-secondary font-bold mt-4 inline-block hover:underline"
+                        href="#"
+                        data-translate="read_more"
+                        >Read More →</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white dark:bg-neutral/20 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
+                  >
+                    <img
+                      class="h-52 w-full object-cover"
+                      data-alt="School building with a closed sign"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0jPsCeajqJMm658BvvYVcf_mhESiLGlvkbUI6EGRNKCh1qyzzXZ-hV0hfsdtrz-nPO0Y8BNOBELYz0M7t-6jZsToCAoRI6eNlQSis3JprEGrGrmq28ASwycnCupxWOBJdNqsCgc_Ye7iJQc19heBjG_ekytEQ19nEyY-98NqwowPtvo2yWQO6Xwh50bx108hXDlwIjlzkcZGnp_Thc1m7EQCknSr0JvgFZWsni6tdyLJhbzp5g7BlbpDolIBogmppcWud-y6Jl9Q"
+                    />
+                    <div class="p-6">
+                      <p
+                        class="text-sm font-medium text-accent dark:text-accent"
+                        data-translate="news4_date"
+                      >
+                        September 10, 2024
+                      </p>
+                      <h3
+                        class="text-xl font-bold mt-2 text-neutral dark:text-white"
+                        data-translate="news4_title"
+                      >
+                        School Holiday Notice
+                      </h3>
+                      <p class="mt-3 text-text-light/80 dark:text-text-dark/80" data-translate="news4_desc">
+                        Please note that the school will be closed on October
+                        10th for a scheduled maintenance day. Classes will
+                        resume as normal.
+                      </p>
+                      <a
+                        class="text-secondary font-bold mt-4 inline-block hover:underline"
+                        href="#"
+                        data-translate="read_more"
+                        >Read More →</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:col-span-1 space-y-8">
+                <div
+                  class="bg-white dark:bg-neutral/20 rounded-xl shadow-lg p-6"
+                >
+                  <h3
+                    class="text-3xl font-bold text-center mb-5 text-neutral dark:text-primary"
+                    data-translate="event_calendar_title"
+                  >
+                    Event Calendar
+                  </h3>
+                  <div
+                    class="flex min-w-72 max-w-[336px] flex-1 flex-col gap-1 mx-auto"
+                  >
+                    <div class="flex items-center p-1 justify-between">
+                      <button
+                        class="hover:bg-primary/20 rounded-full transition-colors"
+                      >
+                        <div
+                          class="flex size-10 items-center justify-center text-text-light dark:text-text-dark"
+                        >
+                          <span class="material-symbols-outlined"
+                            >chevron_left</span
+                          >
+                        </div>
+                      </button>
+                      <p
+                        class="text-lg font-bold leading-tight flex-1 text-center text-neutral dark:text-white"
+                        data-translate="calendar_month"
+                      >
+                        October 2024
+                      </p>
+                      <button
+                        class="hover:bg-primary/20 rounded-full transition-colors"
+                      >
+                        <div
+                          class="flex size-10 items-center justify-center text-text-light dark:text-text-dark"
+                        >
+                          <span class="material-symbols-outlined"
+                            >chevron_right</span
+                          >
+                        </div>
+                      </button>
+                    </div>
+                    <div class="grid grid-cols-7 gap-1">
+                      <p
+                        class="text-[13px] font-bold leading-normal tracking-[0.015em] flex h-10 w-full items-center justify-center pb-0.5 text-accent"
+                      >
+                        S
+                      </p>
+                      <p
+                        class="text-[13px] font-bold leading-normal tracking-[0.015em] flex h-10 w-full items-center justify-center pb-0.5 text-accent"
+                      >
+                        M
+                      </p>
+                      <p
+                        class="text-[13px] font-bold leading-normal tracking-[0.015em] flex h-10 w-full items-center justify-center pb-0.5 text-accent"
+                      >
+                        T
+                      </p>
+                      <p
+                        class="text-[13px] font-bold leading-normal tracking-[0.015em] flex h-10 w-full items-center justify-center pb-0.5 text-accent"
+                      >
+                        W
+                      </p>
+                      <p
+                        class="text-[13px] font-bold leading-normal tracking-[0.015em] flex h-10 w-full items-center justify-center pb-0.5 text-accent"
+                      >
+                        T
+                      </p>
+                      <p
+                        class="text-[13px] font-bold leading-normal tracking-[0.015em] flex h-10 w-full items-center justify-center pb-0.5 text-accent"
+                      >
+                        F
+                      </p>
+                      <p
+                        class="text-[13px] font-bold leading-normal tracking-[0.015em] flex h-10 w-full items-center justify-center pb-0.5 text-accent"
+                      >
+                        S
+                      </p>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark col-start-3 text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          1
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          2
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          3
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          4
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-white text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full bg-accent"
+                        >
+                          5
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          6
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          7
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          8
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          9
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full bg-secondary/30 dark:bg-secondary/50"
+                        >
+                          10
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          11
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          12
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          13
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          14
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          15
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          16
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          17
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          18
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-white text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full bg-primary"
+                        >
+                          19
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          20
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          21
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          22
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          23
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          24
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          25
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          26
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          27
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          28
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          29
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          30
+                        </div>
+                      </button>
+                      <button
+                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                      >
+                        <div
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
+                        >
+                          31
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-white dark:bg-neutral/20 rounded-xl shadow-lg p-6"
+                >
+                  <h3
+                    class="text-3xl font-bold text-center mb-4 text-neutral dark:text-primary"
+                    data-translate="stay_in_loop_title"
+                  >
+                    Stay in the Loop!
+                  </h3>
+                  <p
+                    class="text-center text-text-light/80 dark:text-text-dark/80 mb-6"
+                    data-translate="stay_in_loop_desc"
+                  >
+                    Subscribe to our newsletter for the latest updates.
+                  </p>
+                  <form class="flex flex-col gap-4">
+                    <input
+                      class="form-input w-full rounded-full border-gray-300 dark:border-neutral/50 bg-background-light dark:bg-background-dark/50 text-text-light dark:text-text-dark focus:ring-accent focus:border-accent h-12 px-5"
+                      placeholder="Your email address"
+                      data-translate="your_email_placeholder"
+                      type="email"
+                    />
+                    <button
+                      class="w-full bg-primary text-black font-bold py-3 rounded-full hover:bg-accent/90 transition-transform transform hover:scale-105"
+                      type="submit"
+                    >
+                      <span data-translate="submit_button">Submit</span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Admissions Section -->
+          <section
+            id="admissions"
+            class="bg-subtle-light dark:bg-subtle-dark/20 px-4 py-20 sm:px-6 lg:px-8"
+          >
+            <div class="px-4 py-8">
+              <div class="layout-container flex h-full grow flex-col">
+                <div
+                  class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-10 lg:py-20"
+                >
+                  <div
+                    class="layout-content-container flex flex-col max-w-[960px] flex-1 gap-12"
+                  >
+                    <div class="text-center">
+                      <h2
+                        class="text-text-light dark:text-text-dark text-5xl text-center font-bold leading-tight pb-12"
+                        data-translate="online_registration_title"
+                      >
+                        Online Registration
+                      </h2>
+                      <p class="text-text-light dark:text-dark" data-translate="online_registration_desc">
+                        Hooray! It's time to join our kindergarten family.
+                        Follow these easy-peasy steps to get your little star
+                        registered for a world of fun and learning.
+                      </p>
+                    </div>
+                    <div class="grid grid-cols-[auto_1fr] gap-x-6 px-4">
+                      <div class="flex flex-col items-center gap-2">
+                        <div
+                          class="flex items-center justify-center w-12 h-12 rounded-full bg-accent-red text-white"
+                        >
+                          <span class="material-symbols-outlined text-3xl"
+                            >emoji_people</span
+                          >
+                        </div>
+                        <div
+                          class="w-1 bg-secondary/30 dark:bg-gray-700 h-full rounded-full"
+                        ></div>
+                      </div>
+                      <div class="flex flex-1 flex-col pb-10 pt-2">
+                        <p
+                          class="text-text-light dark:text-dark text-xl font-semibold leading-normal"
+                          data-translate="step1_title"
+                        >
+                          Create a Parent Portal
+                        </p>
+                        <p class="text-text-light/80 dark:text-text-dark-300 text-base font-normal leading-normal"
+                           data-translate="step1_desc">
+                          First, let's get you set up with a parent account.
+                          It’s quick and easy!
+                        </p>
+                      </div>
+                      <div class="flex flex-col items-center gap-2">
+                        <div
+                          class="flex items-center justify-center w-12 h-12 rounded-full bg-accent-green text-white"
+                        >
+                          <span class="material-symbols-outlined text-3xl"
+                            >edit_document</span
+                          >
+                        </div>
+                        <div
+                          class="w-1 bg-secondary/30 dark:bg-gray-700 h-full rounded-full"
+                        ></div>
+                      </div>
+                      <div class="flex flex-1 flex-col pb-10 pt-2">
+                        <p
+                          class="text-text-light dark:text-dark text-xl font-semibold leading-normal"
+                          data-translate="step2_title"
+                        >
+                          Fill in the Fun Form
+                        </p>
+                        <p class="text-text-light/80 dark:text-text-dark-300 text-base font-normal leading-normal"
+                           data-translate="step2_desc">
+                          Tell us all about your little one by filling out our
+                          colorful application form.
+                        </p>
+                      </div>
+                      <div class="flex flex-col items-center gap-2">
+                        <div
+                          class="flex items-center justify-center w-12 h-12 rounded-full bg-accent-blue text-white"
+                        >
+                          <span class="material-symbols-outlined text-3xl"
+                            >cloud_upload</span
+                          >
+                        </div>
+                        <div
+                          class="w-1 bg-secondary/30 dark:bg-gray-700 h-full rounded-full"
+                        ></div>
+                      </div>
+                      <div class="flex flex-1 flex-col pb-10 pt-2">
+                        <p
+                          class="text-text-light dark:text-dark text-xl font-semibold leading-normal"
+                          data-translate="step3_title"
+                        >
+                          Upload Your Documents
+                        </p>
+                        <p class="text-text-light/80 dark:text-text-dark-300 text-base font-normal leading-normal"
+                           data-translate="step3_desc">
+                          Time for a little paperwork! Upload the needed
+                          documents right here.
+                        </p>
+                      </div>
+                      <div class="flex flex-col items-center gap-2">
+                        <div
+                          class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary text-text-dark"
+                        >
+                          <span class="material-symbols-outlined text-3xl"
+                            >rocket_launch</span
+                          >
+                        </div>
+                      </div>
+                      <div class="flex flex-1 flex-col pt-2">
+                        <p
+                          class="text-text-light dark:text-dark text-xl font-semibold leading-normal"
+                          data-translate="step4_title"
+                        >
+                          Blast Off!
+                        </p>
+                        <p class="text-text-light/80 dark:text-dark-300 text-base font-normal leading-normal"
+                           data-translate="step4_desc">
+                          Give everything one last look, hit submit, and you're
+                          all done. Welcome aboard!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="p-4 @container">
+                      <div
+                        class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-soft bg-white dark:bg-background-dark/50 border-4 border-white dark:border-gray-700"
+                      >
+                        <div
+                          class="w-full @xl:w-1/3 bg-center bg-no-repeat aspect-video @xl:aspect-auto @xl:h-full bg-cover rounded-t-lg @xl:rounded-l-lg @xl:rounded-tr-none"
+                          data-alt="A child playing with colorful blocks"
+                          style="
+                            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzP516wNi-DKaFgI16ezqbOO1TwoyPypaGelFcmX3JiLGFHMrNxNN2zL2YL5OB5Ld_q47fRX3uiVdMtJaT5utdP7vUFmLFbadlayHmzspO7uuMvglQI9FvFdv8cYJvpvqQZPiZfn9yHsz1JFzFsxB0AOuxGMHBDINX4cnH0ysviFL3petG6J1jynAPsnUAQNRv8vWoBu88nTMGBkA1g1prgfm0z3Wm6cNNqr_YKTD5ALbJtO6PWBUHw_c7SHuka7M8vTnU-OR8J1Y');
+                          "
+                        ></div>
+                        <img
+                          alt="A child playing with colorful blocks"
+                          class="invisible absolute size-0"
+                        />
+                        <div
+                          class="flex w-full min-w-72 grow flex-col items-start justify-center gap-4 py-8 px-8"
+                        >
+                          <p
+                            class="text-dark dark:text text-3xl font-bold leading-tight tracking-tight"
+                            data-translate="what_you_need_title"
+                          >
+                            What You'll Need
+                          </p>
+                          <ul
+                            class="text-text-light/80 dark:text-dark-300 text-base font-normal leading-normal list-none space-y-3"
+                          >
+                            <li class="flex items-center gap-2" data-translate="doc1">
+                              <span
+                                class="material-symbols-outlined text-accent-green"
+                                >check_box</span
+                              >Birth Certificate
+                            </li>
+                            <li class="flex items-center gap-2" data-translate="doc2">
+                              <span
+                                class="material-symbols-outlined text-accent-green"
+                                >check_box</span
+                              >Proof of Residence
+                            </li>
+                            <li class="flex items-center gap-2" data-translate="doc3">
+                              <span
+                                class="material-symbols-outlined text-accent-green"
+                                >check_box</span
+                              >Immunization Records
+                            </li>
+                            <li class="flex items-center gap-2" data-translate="doc4">
+                              <span
+                                class="material-symbols-outlined text-accent-green"
+                                >check_box</span
+                              >Parent/Guardian ID
+                            </li>
+                          </ul>
+                          <div
+                            class="mt-4 flex flex-col sm:flex-row gap-4 w-full"
+                          >
+                            <button
+                              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary text-text-dark text-lg font-bold leading-normal tracking-wide w-full sm:w-auto transform hover:scale-105 transition-transform duration-300 shadow-lg"
+                            >
+                              <span class="truncate" data-translate="lets_go_button">Let's Go!</span>
+                            </button>
+                            <button
+                              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-secondary text-dark dark:text-white dark:bg-secondary/30 text-lg font-bold leading-normal tracking-wide w-full sm:w-auto transform hover:scale-105 transition-transform duration-300"
+                            >
+                              <span class="truncate" data-translate="download_forms_button">Download Forms</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8 px-4"
+                    >
+                      <div>
+                        <h2
+                          class="text-3xl font-bold mb-6 text-dark dark:text-primary"
+                          data-translate="mark_calendar_title"
+                        >
+                          Mark Your Calendar!
+                        </h2>
+                        <div class="space-y-4">
+                          <div
+                            class="p-5 bg-white dark:bg-background-dark/50 rounded-lg shadow-soft border-l-4 border-accent-red"
+                          >
+                            <p class="font-bold text-lg text-accent-red" data-translate="date1_date">
+                              January 15th
+                            </p>
+                            <p
+                              class="text-md text-text-light/80 dark:text-dark-300"
+                              data-translate="date1_desc"
+                            >
+                              Registration Opens
+                            </p>
+                          </div>
+                          <div
+                            class="p-5 bg-white dark:bg-background-dark/50 rounded-lg shadow-soft border-l-4 border-primary"
+                          >
+                            <p class="font-bold text-lg text-primary" data-translate="date2_date">
+                              March 31st
+                            </p>
+                            <p
+                              class="text-md text-text-light/80 dark:text-dark-300"
+                              data-translate="date2_desc"
+                            >
+                              Registration Deadline
+                            </p>
+                          </div>
+                          <div
+                            class="p-5 bg-white dark:bg-background-dark/50 rounded-lg shadow-soft border-l-4 border-accent-green"
+                          >
+                            <p class="font-bold text-lg text-accent-green" data-translate="date3_date">
+                              April 15th
+                            </p>
+                            <p
+                              class="text-md text-text-light/80 dark:text-dark-300"
+                              data-translate="date3_desc"
+                            >
+                              Welcome Letters Sent Out
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h2
+                          class="text-3xl font-bold mb-6 text-dark dark:text-primary"
+                          data-translate="got_questions_title"
+                        >
+                          Got Questions?
+                        </h2>
+                        <div class="space-y-4">
+                          <details
+                            class="group bg-white dark:bg-background-dark/50 p-5 rounded-lg shadow-soft cursor-pointer"
+                          >
+                            <summary
+                              class="flex justify-between items-center font-semibold text-lg list-none"
+                              data-translate="faq1_q"
+                            >
+                              Can I save my application and come back?
+                              <span
+                                class="material-symbols-outlined transform group-open:rotate-180 transition-transform text-secondary"
+                                >expand_more</span
+                              >
+                            </summary>
+                            <p
+                              class="text-md text-dark/80 dark:text-dark-300 mt-3"
+                              data-translate="faq1_a"
+                            >
+                              Of course! You can save your progress and finish
+                              the application anytime before the deadline. No
+                              rush!
+                            </p>
+                          </details>
+                          <details
+                            class="group bg-white dark:bg-background-dark/50 p-5 rounded-lg shadow-soft cursor-pointer"
+                          >
+                            <summary
+                              class="flex justify-between items-center font-semibold text-lg list-none"
+                              data-translate="faq2_q"
+                            >
+                              What if I get stuck?
+                              <span
+                                class="material-symbols-outlined transform group-open:rotate-180 transition-transform text-secondary"
+                                >expand_more</span
+                              >
+                            </summary>
+                            <p
+                              class="text-md text-dark/80 dark:text-dark-300 mt-3"
+                              data-translate="faq2_a"
+                            >
+                              Don't worry! Our friendly admissions team is here
+                              to help. Call us at (123) 456-7890 or email
+                              admissions@kindergarten.com.
+                            </p>
+                          </details>
+                          <details
+                            class="group bg-white dark:bg-background-dark/50 p-5 rounded-lg shadow-soft cursor-pointer"
+                          >
+                            <summary
+                              class="flex justify-between items-center font-semibold text-lg list-none"
+                              data-translate="faq3_q"
+                            >
+                              Is there a fee to apply?
+                              <span
+                                class="material-symbols-outlined transform group-open:rotate-180 transition-transform text-secondary"
+                                >expand_more</span
+                              >
+                            </summary>
+                            <p
+                              class="text-md text-dark/80 dark:text-dark-300 mt-3"
+                              data-translate="faq3_a"
+                            >
+                              Yes, there's a small, non-refundable application
+                              fee of $50. You'll be prompted to pay when you
+                              submit your application.
+                            </p>
+                          </details>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Contact Us Section -->
+          <section
+            id="contact"
+            class="px-4 py-20 bg-background-light dark:bg-background-dark"
+          >
+            <div class="max-w-7xl mx-auto">
+              <h2
+                class="text-text-light dark:text-text-dark text-5xl text-center font-bold leading-tight pb-12"
+                data-translate="get_in_touch_title"
+              >
+                Get in Touch
+              </h2>
+
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div
+                  class="bg-white dark:bg-background-dark p-6 rounded-xl shadow-lg"
+                >
+                  <form class="space-y-4">
+                    <div>
+                      <label
+                        class="block text-text-light dark:text-text-dark mb-2" data-translate="your_name_label"
+                        >Your Name</label
+                      >
+                      <input
+                        type="text"
+                        class="w-full p-3 rounded-lg border-2 border-primary/20 focus:border-primary focus:ring-0"
+                        placeholder="Little Sprout's Parent" data-translate="your_name_placeholder"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-text-light dark:text-text-dark mb-2" data-translate="email_address_label"
+                        >Email Address</label
+                      >
+                      <input
+                        type="email"
+                        class="w-full p-3 rounded-lg border-2 border-primary/20 focus:border-primary focus:ring-0"
+                        placeholder="hello@littlesprouts.com" data-translate="email_address_placeholder"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-text-light dark:text-text-dark mb-2" data-translate="message_label"
+                        >Message</label
+                      >
+                      <textarea
+                        rows="4"
+                        class="w-full p-3 rounded-lg border-2 border-primary/20 focus:border-primary focus:ring-0"
+                        placeholder="How can we help you grow?" data-translate="message_placeholder"
+                      ></textarea>
+                    </div>
+                    <button
+                      type="submit"
+                      class="w-full bg-primary text-white py-3 px-6 rounded-lg font-bold hover:bg-red-500 transition-colors"
+                      data-translate="send_message_button"
+                    >
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+
+                <div class="space-y-6">
+                  <div
+                    class="bg-accent-blue/10 p-6 rounded-xl transform hover:-translate-y-2 transition-transform duration-300"
+                  >
+                    <h3 class="text-2xl font-bold mb-4 text-accent-blue" data-translate="visit_us_title">
+                      Visit Us
+                    </h3>
+                    <p class="text-text-light dark:text-text-dark" data-translate="address">
+                      123 Sunshine Boulevard<br />Garden City, CA 90210
+                    </p>
+                  </div>
+                  <div
+                    class="bg-accent-green/10 p-6 rounded-xl transform hover:-translate-y-2 transition-transform duration-300"
+                  >
+                    <h3 class="text-2xl font-bold mb-4 text-accent-green" data-translate="contact_info_title">
+                      Contact Info
+                    </h3>
+                    <p class="text-text-light dark:text-text-dark" data-translate="contact_info_details">
+                      Phone: (555) 123-4567<br />Email: hello@littlesprouts.com
+                    </p>
+                  </div>
+                  <div
+                    class="bg-primary/10 p-6 rounded-xl transform hover:-translate-y-2 transition-transform duration-300"
+                  >
+                    <h3 class="text-2xl font-bold mb-4 text-primary" data-translate="hours_title">Hours</h3>
+                    <p class="text-text-light dark:text-text-dark" data-translate="hours_details">
+                      Monday-Friday: 7:30 AM - 6:00 PM<br />Saturday: Closed<br />Sunday:
+                      Closed
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer
+          class="bg-subtle-light dark:bg-subtle-dark/20 border-t border-subtle-light dark:border-subtle-dark"
+        >
+          <div
+            class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
+          >
+            <div class="flex justify-center space-x-6 md:order-2">
+              <a class="text-gray-400 hover:text-primary" href="#">
+                <span class="sr-only">Facebook</span>
+                <svg
+                  aria-hidden="true"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+              <a class="text-gray-400 hover:text-primary" href="#">
+                <span class="sr-only">Instagram</span>
+                <svg
+                  aria-hidden="true"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7.167a4.833 4.833 0 100 9.666 4.833 4.833 0 000-9.666zM12 15a3 3 0 110-6 3 3 0 010 6zm4.833-8.125a1.208 1.208 0 100-2.416 1.208 1.208 0 000 2.416z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="mt-8 md:order-1 md:mt-0">
+              <p class="text-center text-sm leading-5 text-gray-500" data-translate="footer_copyright">
+                © 2024 Little Sprouts Kindergarten. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
