@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
       footer_copyright: '© 2024 Little Sprouts Kindergarten. All rights reserved.'
     },
     ar: {
-      site_name: 'براعم صغيرة',
+      site_name: 'البراعم الصغيرة',
       home: 'الرئيسية',
       about_us: 'من نحن',
       programs: 'برامجنا',

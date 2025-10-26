@@ -75,6 +75,37 @@ A vibrant, responsive website for Little Sprouts Kindergarten, designed to showc
 - **Forms**: Fill out the newsletter signup or contact form; submissions are logged to the console (for demo purposes).
 - **Responsive Testing**: Resize your browser or use developer tools to test mobile responsiveness.
 
+### Deployment to GitHub Pages
+
+1. **Build the CSS**:
+   ```bash
+   npm run build-css
+   ```
+
+2. **Push to GitHub**:
+   - Create a new repository on GitHub.
+   - Push your code:
+     ```bash
+     git init
+     git add .
+     git commit -m "Initial commit"
+     git branch -M main
+     git remote add origin https://github.com/yourusername/your-repo-name.git
+     git push -u origin main
+     ```
+
+3. **Enable GitHub Pages**:
+   - Go to your repository settings.
+   - Scroll to "Pages" section.
+   - Select "Deploy from a branch".
+   - Choose "main" branch and "/ (root)" folder.
+   - Click "Save".
+
+4. **Access Your Site**:
+   - Your site will be available at `https://yourusername.github.io/your-repo-name/`.
+
+**Note**: The site uses local CSS (built from Tailwind) for production reliability. Ensure to run `npm run build-css` before deploying to update styles.
+
 ## 📁 Project Structure
 
 ```

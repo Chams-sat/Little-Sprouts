@@ -7,7 +7,7 @@
     <meta name="description" content="Little Sprouts Kindergarten offers a nurturing environment for early childhood development with play-based learning, experienced teachers, and fun activities. Enroll now!">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
     <!-- External Resources -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="dist/output.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Gaegu:wght@400;700&display=swap"
       rel="stylesheet"
@@ -29,7 +29,7 @@
       <div class="layout-container flex h-full grow flex-col">
         <!-- Header/Navigation -->
         <header
-          class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-subtle-light dark:border-subtle-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-10 py-3"
+          class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-subtle-light dark:border-subtle-dark bg-background-light/80 backdrop-blur-sm px-4 py-3 md:px-10"
         >
           <div
             class="flex items-center gap-3 text-text-light dark:text-text-dark"
@@ -46,12 +46,12 @@
               </svg>
             </div>
             <h2
-              class="text-text-light dark:text-text-dark text-xl font-bold leading-tight"
+              class="text-text-light dark:text-text-dark text-lg md:text-xl font-bold leading-tight"
             >
               <span data-translate="site_name">Little Sprouts</span>
             </h2>
           </div>
-          <div class="flex flex-1 justify-end gap-6">
+          <div class="flex flex-1 justify-end gap-2 md:gap-6">
             <div class="hidden md:flex items-center gap-8">
               <a
                 class="text-text-light dark:text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors"
@@ -86,18 +86,18 @@
             </div>
             <button
               id="lang-switcher"
-              class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-secondary text-text-dark text-sm font-bold leading-normal tracking-wide shadow-md hover:bg-yellow-400 transform hover:scale-105 transition-all duration-300"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 md:h-12 md:px-6 bg-secondary text-dark text-sm md:text-base font-bold leading-normal tracking-wide shadow-md hover:bg-yellow-400 transform hover:scale-105 transition-all duration-300"
             >
               <span class="truncate">العربية</span>
             </button>
             <a
               href="#admissions"
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide shadow-lg hover:bg-red-500 transform hover:scale-105 transition-all duration-300"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 md:h-12 md:px-6 bg-primary text-white text-sm md:text-base font-bold leading-normal tracking-wide shadow-lg hover:bg-red-500 transform hover:scale-105 transition-all duration-300"
             >
               <span class="truncate" data-translate="enroll_now">Enroll Now</span>
             </a>
             <div class="md:hidden flex items-center">
-              <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <button id="mobile-menu-button" class="inline-flex items-center justify-center p-3 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                 <span class="sr-only">Open main menu</span>
                 <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -111,11 +111,11 @@
         </header>
         <div id="mobile-menu" class="md:hidden hidden">
     <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <a href="#home" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="home">Home</a>
-        <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="about_us">About Us</a>
-        <a href="#programs" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="programs">Programs</a>
-        <a href="#news" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="news">News</a>
-        <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="contact">Contact</a>
+        <a href="#home" class="text-dark-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="home">Home</a>
+        <a href="#about" class="text-dark-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="about_us">About Us</a>
+        <a href="#programs" class="text-dark-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="programs">Programs</a>
+        <a href="#news" class="text-dark-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="news">News</a>
+        <a href="#contact" class="text-dark-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="contact">Contact</a>
     </div>
 </div>
 
@@ -177,7 +177,7 @@
                     Why Choose Us
                   </h1>
                   <p
-                    class="text-text-light/80 dark:text-text-dark/80 text-lg font-normal leading-normal max-w-3xl mx-auto"
+                    class="text-dark dark:text-dark/80 text-lg font-normal leading-normal max-w-3xl mx-auto"
                     data-translate="why_choose_us_subtitle"
                   >
                     We provide a nurturing and stimulating environment where
@@ -201,7 +201,7 @@
                         Experienced Teachers
                       </h2>
                       <p
-                        class="text-gray-700 dark:text-gray-300 text-base font-normal leading-normal"
+                        class="text-dark-700 dark:text-dark-300 text-base font-normal leading-normal"
                         data-translate="experienced_teachers_desc"
                       >
                         Our dedicated and passionate educators are experts in
@@ -225,7 +225,7 @@
                         Play-Based Learning
                       </h2>
                       <p
-                        class="text-gray-700 dark:text-gray-300 text-base font-normal leading-normal"
+                        class="text-dark-700 dark:text-dark-300 text-base font-normal leading-normal"
                         data-translate="play_based_learning_desc"
                       >
                         We believe children learn best through play,
@@ -243,13 +243,13 @@
                     >
                     <div class="flex flex-col gap-2">
                       <h2
-                        class="text-text-light dark:text-text-dark text-2xl font-bold leading-tight"
+                        class="text-light dark:text-dark text-2xl font-bold leading-tight"
                         data-translate="safe_caring_env_title"
                       >
                         Safe & Caring Environment
                       </h2>
                       <p
-                        class="text-gray-700 dark:text-gray-300 text-base font-normal leading-normal"
+                        class="text-dark-700 dark:text-dark-300 text-base font-normal leading-normal"
                         data-translate="safe_caring_env_desc"
                       >
                         Your child's safety and well-being are our top
@@ -275,14 +275,14 @@
               </h2>
               <div class="flex flex-col max-w-4xl mx-auto gap-4">
                 <details
-                  class="flex flex-col border-b-4 border-accent-green rounded-lg bg-white dark:bg-gray-800 p-4 group"
+                  class="flex flex-col border-b-4 border-accent-green rounded-lg bg-white dark:bg-white-800 p-4 group"
                   open=""
                 >
                   <summary
                     class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none"
                   >
                     <p
-                      class="text-text-light dark:text-text-dark text-xl font-bold"
+                      class="text-light dark:text-dark text-xl font-bold"
                       data-translate="toddlers_title"
                     >
                       Toddlers (1-2 years)
@@ -293,7 +293,7 @@
                     >
                   </summary>
                   <p
-                    class="text-gray-600 dark:text-gray-300 text-base font-normal leading-relaxed pt-2"
+                    class="text-dark-600 dark:text-dark-300 text-base font-normal leading-relaxed pt-2"
                     data-translate="toddlers_desc"
                   >
                     Our toddler program focuses on sensory exploration, language
@@ -303,13 +303,13 @@
                   </p>
                 </details>
                 <details
-                  class="flex flex-col border-b-4 border-accent-blue rounded-lg bg-white dark:bg-gray-800 p-4 group"
+                  class="flex flex-col border-b-4 border-accent-blue rounded-lg bg-white dark:bg-white-800 p-4 group"
                 >
                   <summary
                     class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none"
                   >
                     <p
-                      class="text-text-light dark:text-text-dark text-xl font-bold"
+                      class="text-light dark:text-dark text-xl font-bold"
                       data-translate="preschool_title"
                     >
                       Preschool (3-4 years)
@@ -320,7 +320,7 @@
                     >
                   </summary>
                   <p
-                    class="text-gray-600 dark:text-gray-300 text-base font-normal leading-relaxed pt-2"
+                    class="text-dark-600 dark:text-dark-300 text-base font-normal leading-relaxed pt-2"
                     data-translate="preschool_desc"
                   >
                     Our preschool program builds on foundational skills,
@@ -330,13 +330,13 @@
                   </p>
                 </details>
                 <details
-                  class="flex flex-col border-b-4 border-primary rounded-lg bg-white dark:bg-gray-800 p-4 group"
+                  class="flex flex-col border-b-4 border-primary rounded-lg bg-white dark:bg-white-800 p-4 group"
                 >
                   <summary
                     class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none"
                   >
                     <p
-                      class="text-text-light dark:text-text-dark text-xl font-bold"
+                      class="text-light dark:text-dark text-xl font-bold"
                       data-translate="prek_title"
                     >
                       Pre-K (4-5 years)
@@ -347,7 +347,7 @@
                     >
                   </summary>
                   <p
-                    class="text-gray-600 dark:text-gray-300 text-base font-normal leading-relaxed pt-2"
+                    class="text-dark-600 dark:text-dark-300 text-base font-normal leading-relaxed pt-2"
                     data-translate="prek_desc"
                   >
                     Our Pre-K program is designed to prepare children for
@@ -360,42 +360,42 @@
             </div>
             <div class="py-16 max-w-7xl mx-auto">
               <h2
-                class="text-text-light dark:text-text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
+                class="text-light dark:text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
                 data-translate="daily_adventures_title"
               >
                 Our Daily Adventures
               </h2>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-10 p-4">
                 <div
-                  class="flex flex-col items-center text-center p-8 bg-accent-green rounded-xl shadow-lg border-4 border-text-light dark:border-text-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                  class="flex flex-col items-center text-center p-8 bg-accent-green rounded-xl shadow-lg border-4 border-subtle-dark dark:border-text-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <span
-                    class="material-symbols-outlined text-white text-6xl mb-4"
+                    class="material-symbols-outlined text-dark text-6xl mb-4"
                     >draw</span
                   >
-                  <h3 class="text-white text-2xl font-bold mb-2" data-translate="art_giggles_title">
+                  <h3 class="text-dark text-2xl font-bold mb-2" data-translate="art_giggles_title">
                     Art & Giggles
                   </h3>
-                  <p class="text-white" data-translate="art_giggles_desc">
+                  <p class="text-dark" data-translate="art_giggles_desc">
                     Splashing paint, moulding clay, and creating masterpieces.
                   </p>
                 </div>
                 <div
-                  class="flex flex-col items-center text-center p-8 bg-primary rounded-xl shadow-lg border-4 border-text-light dark:border-text-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                  class="flex flex-col items-center text-center p-8 bg-primary rounded-xl shadow-lg border-4 border-subtle-dark dark:border-text-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <span
-                    class="material-symbols-outlined text-white text-6xl mb-4"
+                    class="material-symbols-outlined text-dark text-6xl mb-4"
                     >music_note</span
                   >
-                  <h3 class="text-white text-2xl font-bold mb-2" data-translate="jingles_wiggles_title">
+                  <h3 class="text-dark text-2xl font-bold mb-2" data-translate="jingles_wiggles_title">
                     Jingles & Wiggles
                   </h3>
-                  <p class="text-white" data-translate="jingles_wiggles_desc">
+                  <p class="text-dark" data-translate="jingles_wiggles_desc">
                     Singing songs, dancing around, and playing instruments.
                   </p>
                 </div>
                 <div
-                  class="flex flex-col items-center text-center p-8 bg-accent-blue rounded-xl shadow-lg border-4 border-text-light dark:border-text-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                  class="flex flex-col items-center text-center p-8 bg-accent-blue rounded-xl shadow-lg border-4 border-subtle-dark dark:border-text-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <span
                     class="material-symbols-outlined text-text-light text-6xl mb-4"
@@ -419,13 +419,13 @@
               </h2>
               <div class="relative px-4">
                 <div
-                  class="absolute left-1/2 top-0 h-full w-1 bg-text-dark transform -translate-x-1/2"
+                  class="absolute left-1/2 top-0 h-full w-1 bg-background-dark transform -translate-x-1/2"
                 ></div>
                 <div class="space-y-12">
                   <div class="flex items-center w-full">
                     <div class="w-1/2 flex justify-end pr-10">
                       <div
-                        class="p-6 bg-white rounded-xl shadow-playful border-4 border-text-dark w-full max-w-sm text-right"
+                        class="p-6 bg-white rounded-xl shadow-playful border-4 border-subtle-dark w-full max-w-sm text-right"
                       >
                         <p class="text-accent-red font-semiebold text-lg" data-translate="time_900">
                           9:00 AM
@@ -455,7 +455,7 @@
                     </div>
                     <div class="w-1/2 flex justify-start pl-10">
                       <div
-                        class="p-6 bg-white rounded-xl shadow-playful border-4 border-text-dark w-full max-w-sm"
+                        class="p-6 bg-white rounded-xl shadow-playful border-4 border-subtle-dark w-full max-w-sm"
                       >
                         <p class="text-accent-green font-semiebold text-lg" data-translate="time_930">
                           9:30 AM
@@ -475,7 +475,7 @@
                   <div class="flex items-center w-full">
                     <div class="w-1/2 flex justify-end pr-10">
                       <div
-                        class="p-6 bg-white rounded-xl shadow-playful border-4 border-text-dark w-full max-w-sm text-right"
+                        class="p-6 bg-white rounded-xl shadow-playful border-4 border-subtle-dark w-full max-w-sm text-right"
                       >
                         <p class="text-secondary font-semiebold text-lg" data-translate="time_1030">
                           10:30 AM
@@ -505,7 +505,7 @@
                     </div>
                     <div class="w-1/2 flex justify-start pl-10">
                       <div
-                        class="p-6 bg-white rounded-xl shadow-playful border-4 border-text-dark w-full max-w-sm"
+                        class="p-6 bg-white rounded-xl shadow-playful border-4 border-subtle-dark w-full max-w-sm"
                       >
                         <p class="text-accent-red font-semiebold text-lg" data-translate="time_1130">
                           11:30 AM
@@ -533,13 +533,13 @@
             class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-12 text-center bg-background-light dark:bg-background-dark/20"
           >
             <h2
-              class="text-text-light dark:text-text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
+              class="text-light dark:text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
               data-translate="mission_vision_title"
             >
               Our Mission & Vision
             </h2>
             <p
-              class="text-text-light/80 dark:text-text-dark/80 text-lg font-normal leading-relaxed pb-3 pt-1 px-4 max-w-4xl mx-auto"
+              class="text-dark/80 dark:text-dark/80 text-lg font-normal leading-relaxed pb-3 pt-1 px-4 max-w-4xl mx-auto"
               data-translate="mission_vision_desc"
             >
               Our mission is to create a joyful, safe, and colorful world where
@@ -550,7 +550,7 @@
 
             <div class="py-16">
               <h2
-                class="text-text-light dark:text-text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
+                class="text-dark dark:text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
                 data-translate="core_values_title"
               >
                 Our Core Values
@@ -559,7 +559,7 @@
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto"
               >
                 <div
-                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[-2deg]"
+                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-light rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[-2deg]"
                 >
                   <div class="p-4 bg-primary/20 rounded-full mb-4">
                     <span
@@ -568,13 +568,13 @@
                     >
                   </div>
                   <h3 class="text-dark text-2xl font-bold mb-2" data-translate="creativity_title">Creativity</h3>
-                  <p class="text-gray-600 dark:text-gray-400" data-translate="creativity_desc">
+                  <p class="text-dark-600 dark:text-dark-400" data-translate="creativity_desc">
                     Splashing paint, singing songs, and building worlds from our
                     wildest dreams.
                   </p>
                 </div>
                 <div
-                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[2deg]"
+                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-light rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[2deg]"
                 >
                   <div class="p-4 bg-secondary/20 rounded-full mb-4">
                     <span
@@ -583,13 +583,13 @@
                     >
                   </div>
                   <h3 class="text-dark text-2xl font-bold mb-2" data-translate="community_title">Community</h3>
-                  <p class="text-gray-600 dark:text-gray-400" data-translate="community_desc">
+                  <p class="text-drk-600 dark:text-dark-400" data-translate="community_desc">
                     Sharing smiles, helping friends, and growing together like a
                     big, happy family.
                   </p>
                 </div>
                 <div
-                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[-2deg]"
+                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-light rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[-2deg]"
                 >
                   <div class="p-4 bg-accent-green/20 rounded-full mb-4">
                     <span
@@ -598,13 +598,13 @@
                     >
                   </div>
                   <h3 class="text-dark text-2xl font-bold mb-2" data-translate="kindness_title">Kindness</h3>
-                  <p class="text-gray-600 dark:text-gray-400" data-translate="kindness_desc">
+                  <p class="text-dark-600 dark:text-dark-400" data-translate="kindness_desc">
                     Using kind words, giving warm hugs, and celebrating what
                     makes each of us special.
                   </p>
                 </div>
                 <div
-                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[2deg]"
+                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-light rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[2deg]"
                 >
                   <div class="p-4 bg-accent-blue/20 rounded-full mb-4">
                     <span
@@ -615,7 +615,7 @@
                   <h3 class="text-dark text-2xl font-bold mb-2" data-translate="playful_learning_title_alt">
                     Playful Learning
                   </h3>
-                  <p class="text-gray-600 dark:text-gray-400" data-translate="playful_learning_desc_alt">
+                  <p class="text-dark-600 dark:text-dark-400" data-translate="playful_learning_desc_alt">
                     Discovering the world through giggles, games, and grand
                     adventures.
                   </p>
@@ -624,17 +624,17 @@
             </div>
 
             <div
-              class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-16 bg-white dark:bg-background-dark max-w-7xl mx-auto rounded-xl shadow-lg"
+              class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-16 bg-white dark:bg-background-light max-w-7xl mx-auto rounded-xl shadow-lg"
             >
               <h2
-                class="text-text-light dark:text-text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
+                class="text-light dark:text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
                 data-translate="meet_staff_title"
               >
                 Meet Our Super Staff!
               </h2>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div
-                  class="bg-white dark:bg-subtle-dark rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-primary"
+                  class="bg-white dark:bg-subtle-light rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-primary"
                 >
                   <img
                     class="w-full h-72 object-cover"
@@ -646,14 +646,14 @@
                     <p class="text-primary font-semibold mb-2 text-lg" data-translate="jane_doe_role">
                       Director & Head Explorer
                     </p>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm" data-translate="jane_doe_bio">
+                    <p class="text-dark-600 dark:text-dark-400 text-sm" data-translate="jane_doe_bio">
                       "With 15 years of adventures in early education, I love
                       creating a magical space where every child can sparkle!"
                     </p>
                   </div>
                 </div>
                 <div
-                  class="bg-white dark:bg-subtle-dark rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-accent-blue"
+                  class="bg-white dark:bg-subtle-light rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-accent-blue"
                 >
                   <img
                     class="w-full h-72 object-cover"
@@ -667,14 +667,14 @@
                     <p class="text-accent-blue font-semibold mb-2 text-lg" data-translate="john_smith_role">
                       Lead Teacher & Chief Storyteller
                     </p>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm" data-translate="john_smith_bio">
+                    <p class="text-dark-600 dark:text-dark-400 text-sm" data-translate="john_smith_bio">
                       "My mission is to spark endless curiosity with silly
                       songs, messy art, and stories that leap off the page!"
                     </p>
                   </div>
                 </div>
                 <div
-                  class="bg-white dark:bg-subtle-dark rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-accent-green"
+                  class="bg-white dark:bg-subtle-light rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-accent-green"
                 >
                   <img
                     class="w-full h-72 object-cover"
@@ -688,7 +688,7 @@
                     <p class="text-accent-green font-semibold mb-2 text-lg" data-translate="emily_white_role">
                       Assistant Teacher & Fun Champion
                     </p>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm" data-translate="emily_white_bio">
+                    <p class="text-dark-600 dark:text-dark-400 text-sm" data-translate="emily_white_bio">
                       "I love seeing little faces light up with confidence as
                       they build, create, and make new friends every day."
                     </p>
@@ -699,7 +699,7 @@
           </section>
           <!-- Testimonials Section -->
           <section
-            class="px-4 py-20 sm:px-6 lg:px-8 bg-background-light dark:bg-background-dark"
+            class="px-4 py-20 sm:px-6 lg:px-8 bg-background-light dark:bg-background-darkt"
           >
             <div class="mx-auto max-w-7xl text-center">
               <h2
@@ -710,7 +710,7 @@
               </h2>
               <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <div
-                  class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  class="bg-white dark:bg-white-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                 >
                   <img
                     alt="Parent photo"
@@ -718,18 +718,18 @@
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaU1LW7cbbAjBiYunW74EQAujzyUvDATNgYOlQ0fk53fTymjwpag0ahXrF4VBOMhORGCsHzqRLAA9TFIZwUOVzQcYCdfiKuH6g1o883vDu_R0OnLrZsrFTItPsKZlDBBRK0nhIarByMUjeuonRMGKO8h98awYjrrHli7Sh9l8IjohQ7YhTk5IsVzO0AohMvvyRRPAio96rplSvFBi81vcpmixL8ENtiRwTc3q8sVJRWHzZuq_2aB5EX-zUh5cxcwBkV1RpdBCjSZ0"
                   />
                   <p
-                    class="text-gray-600 dark:text-gray-300 italic text-lg mb-4"
+                    class="text-dark-600 dark:text-dark-300 italic text-lg mb-4"
                     data-translate="testimonial1_text"
                   >
                     "Little Sprouts has been a second home for our daughter. The
                     teachers are incredibly caring and attentive."
                   </p>
-                  <p class="font-bold text-text-light dark:text-text-dark" data-translate="testimonial1_family">
+                  <p class="font-bold text-light dark:text-dark" data-translate="testimonial1_family">
                     - The Smith Family
                   </p>
                 </div>
                 <div
-                  class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  class="bg-white dark:bg-white-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                 >
                   <img
                     alt="Parent photo"
@@ -737,18 +737,18 @@
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD38wyrluVx9mmEzs2aZFZMoGsWonNRH3DDIW7V5R3ztSJQkcZMrz-Pcxl4QgAfbegQ3NtOZOE8nT0A_X19Zc6fnHLNhq8AyI2O9nj7xOcqDkF56x2dw0x0I5SZloBL3VTqrS7PdFuLq30fH1avwViVkNUrVpqfMucUTSb-aBEj6vmr3OlA-gR2Prx2E_A-RueHIEjqcdV7Oz6P93VtVUfuhgvxF0-dN7STRa3oKI2n8q-riCVntNfj5Gp_JHxdq7fJ-tjyL9MTSdw"
                   />
                   <p
-                    class="text-gray-600 dark:text-gray-300 italic text-lg mb-4"
+                    class="text-dark-600 dark:text-dark-300 italic text-lg mb-4"
                     data-translate="testimonial2_text"
                   >
                     "We are so impressed with the play-based curriculum. Our son
                     is learning so much while having fun!"
                   </p>
-                  <p class="font-bold text-text-light dark:text-text-dark" data-translate="testimonial2_family">
+                  <p class="font-bold text-light dark:text-dark" data-translate="testimonial2_family">
                     - The Johnson Family
                   </p>
                 </div>
                 <div
-                  class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  class="bg-white dark:bg-white-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                 >
                   <img
                     alt="Parent photo"
@@ -756,13 +756,13 @@
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPUcI8sVWf3vcp_aRdicM80RYanYCa91tnoh65ByBWZBEC8frzu_E3IhKDM4kyL4y55N2Nb_3Z_R8aFFyAwkQt_COQ63hI4XryL41gYiwHTa5P9tlVznsAA_t3Ua1ZylUFbMZRPgN4822CzYB53Xf8aYhHllRG8nu68xHZS7AlIxaUjJTszsNAdV-kgk-O43aKA7gve2iEeNpjpiAJjKQvV_dPdKvph5wpxie_ueZ7p9H7bNxAfLejtY6lPRiT-DMAQUb9Z4TX-gg"
                   />
                   <p
-                    class="text-gray-600 dark:text-gray-300 italic text-lg mb-4"
+                    class="text-dark-600 dark:text-dark-300 italic text-lg mb-4"
                     data-translate="testimonial3_text"
                   >
                     "The facilities are clean, safe, and welcoming. We couldn't
                     be happier with our choice."
                   </p>
-                  <p class="font-bold text-text-light dark:text-text-dark" data-translate="testimonial3_family">
+                  <p class="font-bold text-light dark:text-dark" data-translate="testimonial3_family">
                     - The Williams Family
                   </p>
                 </div>
@@ -847,7 +847,7 @@
                 </div>
               </div>
             </div>
-            <div class="px-4 py-20 sm:px-6 lg:px-8 dark:bg-accent-blue/20">
+            <div class="px-4 py-20 sm:px-6 lg:px-8 dark:bg-accent/20">
               <div class="mx-auto max-w-2xl text-center">
                 <h2
                   class="text-4xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-5xl"
@@ -856,7 +856,7 @@
                   Schedule a Visit Today!
                 </h2>
                 <p
-                  class="mt-6 text-lg leading-8 text-gray-700 dark:text-gray-300"
+                  class="mt-6 text-lg leading-8 text-dark-700 dark:text-dark-300"
                   data-translate="schedule_visit_desc"
                 >
                   Come see our wonderful kindergarten for yourself. We'd love to
@@ -869,7 +869,7 @@
                     <span class="truncate" data-translate="book_tour">Book a Tour</span>
                   </button>
                   <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-secondary text-text-light text-lg font-bold leading-normal tracking-wide shadow-lg hover:bg-yellow-400 transform hover:scale-105 transition-all duration-300"
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-secondary text-light text-lg font-bold leading-normal tracking-wide shadow-lg hover:bg-yellow-400 transform hover:scale-105 transition-all duration-300"
                   >
                     <span class="truncate" data-translate="download_handbook">Download Handbook</span>
                   </button>
@@ -900,7 +900,7 @@
                         <span class="material-symbols-outlined">search</span>
                       </div>
                       <input
-                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-full text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-none bg-white dark:bg-background-dark focus:border-none h-full placeholder:text-text-light/70 dark:placeholder:text-text-dark/70 px-4 text-base font-medium leading-normal"
+                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-full text-light dark:text-dark focus:outline-0 focus:ring-0 border-none bg-white dark:bg-background-white focus:border-none h-full placeholder:text-light/70 dark:placeholder:text-white/70 px-4 text-base font-medium leading-normal"
                         placeholder="Find fun news & events..."
                         data-translate="find_news_placeholder"
                         value=""
@@ -910,17 +910,17 @@
                 </div>
                 <div class="flex gap-4 flex-wrap justify-center">
                   <button
-                    class="flex h-12 shrink-0 items-center justify-center gap-x-2.5 rounded-full bg-primary text-text-light px-6 shadow-md transform hover:scale-105 transition-transform"
+                    class="flex h-12 shrink-0 items-center justify-center gap-x-2.5 rounded-full bg-primary text-light px-6 shadow-md transform hover:scale-105 transition-transform"
                   >
-                    <p class="text-base font-bold leading-normal" data-translate="news_tab">News</p>
+                    <p class="text-white font-bold leading-normal" data-translate="news_tab">News</p>
                   </button>
                   <button
-                    class="flex h-12 shrink-0 items-center justify-center gap-x-2.5 rounded-full bg-white dark:bg-neutral/30 px-6 text-text-light dark:text-text-dark shadow-md transform hover:scale-105 transition-transform"
+                    class="flex h-12 shrink-0 items-center justify-center gap-x-2.5 rounded-full bg-secondary dark:bg-neutral/30 px-6 text-light dark:text-dark shadow-md transform hover:scale-105 transition-transform"
                   >
                     <p class="text-base font-bold leading-normal" data-translate="events_tab">Events</p>
                   </button>
                   <button
-                    class="flex h-12 shrink-0 items-center justify-center gap-x-2.5 rounded-full bg-white dark:bg-neutral/30 px-6 text-text-light dark:text-text-dark shadow-md transform hover:scale-105 transition-transform"
+                    class="flex h-12 shrink-0 items-center justify-center gap-x-2.5 rounded-full bg-secondary dark:bg-neutral/30 px-6 text-light dark:text-dark shadow-md transform hover:scale-105 transition-transform"
                   >
                     <p class="text-base font-bold leading-normal" data-translate="holidays_tab">Holidays</p>
                   </button>
@@ -952,12 +952,12 @@
                         September 25, 2024
                       </p>
                       <h3
-                        class="text-xl font-bold mt-2 text-neutral dark:text-white"
+                        class="text-xl font-bold mt-2 text-neutral dark:text-dark"
                         data-translate="news1_title"
                       >
                         Annual Sports Day Fun!
                       </h3>
-                      <p class="mt-3 text-text-light/80 dark:text-text-dark/80" data-translate="news1_desc">
+                      <p class="mt-3 text-light/80 dark:text-dark/80" data-translate="news1_desc">
                         Get ready for a day of fun and games! Our Annual Sports
                         Day is just around the corner. Join us for a day of
                         healthy competition.
@@ -986,12 +986,12 @@
                         September 20, 2024
                       </p>
                       <h3
-                        class="text-xl font-bold mt-2 text-neutral dark:text-white"
+                        class="text-xl font-bold mt-2 text-neutral dark:text-dark"
                         data-translate="news2_title"
                       >
                         Parent-Teacher Chit-Chats
                       </h3>
-                      <p class="mt-3 text-text-light/80 dark:text-text-dark/80" data-translate="news2_desc">
+                      <p class="mt-3 text-light/80 dark:text-dark/80" data-translate="news2_desc">
                         We invite all parents to attend the upcoming
                         Parent-Teacher meetings to discuss your child's progress
                         and development.
@@ -1020,12 +1020,12 @@
                         September 15, 2024
                       </p>
                       <h3
-                        class="text-xl font-bold mt-2 text-neutral dark:text-white"
+                        class="text-xl font-bold mt-2 text-neutral dark:text-dark"
                         data-translate="news3_title"
                       >
                         Artsy-Crafty Fair
                       </h3>
-                      <p class="mt-3 text-text-light/80 dark:text-text-dark/80" data-translate="news3_desc">
+                      <p class="mt-3 text-light/80 dark:text-dark/80" data-translate="news3_desc">
                         Come and see the amazing creations of our talented
                         little artists at the annual Art and Craft Fair. A
                         vibrant display of creativity!
@@ -1054,12 +1054,12 @@
                         September 10, 2024
                       </p>
                       <h3
-                        class="text-xl font-bold mt-2 text-neutral dark:text-white"
+                        class="text-xl font-bold mt-2 text-neutral dark:text-dark"
                         data-translate="news4_title"
                       >
                         School Holiday Notice
                       </h3>
-                      <p class="mt-3 text-text-light/80 dark:text-text-dark/80" data-translate="news4_desc">
+                      <p class="mt-3 text-light/80 dark:text-dark/80" data-translate="news4_desc">
                         Please note that the school will be closed on October
                         10th for a scheduled maintenance day. Classes will
                         resume as normal.
@@ -1092,7 +1092,7 @@
                         class="hover:bg-primary/20 rounded-full transition-colors"
                       >
                         <div
-                          class="flex size-10 items-center justify-center text-text-light dark:text-text-dark"
+                          class="flex size-10 items-center justify-center text-light dark:text-dark"
                         >
                           <span class="material-symbols-outlined"
                             >chevron_left</span
@@ -1100,7 +1100,7 @@
                         </div>
                       </button>
                       <p
-                        class="text-lg font-bold leading-tight flex-1 text-center text-neutral dark:text-white"
+                        class="text-lg font-bold leading-tight flex-1 text-center text-neutral dark:text-dark"
                         data-translate="calendar_month"
                       >
                         October 2024
@@ -1109,7 +1109,7 @@
                         class="hover:bg-primary/20 rounded-full transition-colors"
                       >
                         <div
-                          class="flex size-10 items-center justify-center text-text-light dark:text-text-dark"
+                          class="flex size-10 items-center justify-center text-light dark:text-dark"
                         >
                           <span class="material-symbols-outlined"
                             >chevron_right</span
@@ -1154,7 +1154,7 @@
                         S
                       </p>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark col-start-3 text-sm font-medium leading-normal"
+                        class="h-10 w-full text-text-light dark:text-dark col-start-3 text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1163,7 +1163,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1172,7 +1172,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1181,7 +1181,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1190,16 +1190,16 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-white text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
-                          class="flex size-full items-center justify-center rounded-full bg-accent"
+                          class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
                         >
                           5
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1208,7 +1208,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1217,7 +1217,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1226,7 +1226,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1244,7 +1244,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1253,7 +1253,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1262,7 +1262,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1271,7 +1271,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1280,7 +1280,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1289,7 +1289,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1298,7 +1298,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1307,7 +1307,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1325,7 +1325,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1334,7 +1334,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1343,7 +1343,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1352,7 +1352,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1361,7 +1361,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1370,7 +1370,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1379,7 +1379,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1388,7 +1388,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1397,7 +1397,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1406,7 +1406,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1415,7 +1415,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1424,8 +1424,8 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
-                      >
+                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
                         >
@@ -1445,20 +1445,20 @@
                     Stay in the Loop!
                   </h3>
                   <p
-                    class="text-center text-text-light/80 dark:text-text-dark/80 mb-6"
+                    class="text-center text-light/80 dark:text-dark/80 mb-6"
                     data-translate="stay_in_loop_desc"
                   >
                     Subscribe to our newsletter for the latest updates.
                   </p>
                   <form class="flex flex-col gap-4">
                     <input
-                      class="form-input w-full rounded-full border-gray-300 dark:border-neutral/50 bg-background-light dark:bg-background-dark/50 text-text-light dark:text-text-dark focus:ring-accent focus:border-accent h-12 px-5"
+                      class="form-input w-full rounded-full border-gray-300 dark:border-neutral/50 bg-background-light dark:bg-background-dark/50 text-light dark:text-dark focus:border-primary focus:ring-0 h-12 px-5"
                       placeholder="Your email address"
                       data-translate="your_email_placeholder"
                       type="email"
                     />
                     <button
-                      class="w-full bg-primary text-black font-bold py-3 rounded-full hover:bg-accent/90 transition-transform transform hover:scale-105"
+                      class="w-full bg-primary text-white font-bold py-3 rounded-full hover:bg-accent/90 transition-transform transform hover:scale-105"
                       type="submit"
                     >
                       <span data-translate="submit_button">Submit</span>
@@ -1483,12 +1483,12 @@
                   >
                     <div class="text-center">
                       <h2
-                        class="text-text-light dark:text-text-dark text-5xl text-center font-bold leading-tight pb-12"
+                        class="text-light dark:text-dark text-5xl text-center font-bold leading-tight pb-12"
                         data-translate="online_registration_title"
                       >
                         Online Registration
                       </h2>
-                      <p class="text-text-light dark:text-dark" data-translate="online_registration_desc">
+                      <p class="text-light dark:text-dark" data-translate="online_registration_desc">
                         Hooray! It's time to join our kindergarten family.
                         Follow these easy-peasy steps to get your little star
                         registered for a world of fun and learning.
@@ -1509,13 +1509,13 @@
                       </div>
                       <div class="flex flex-1 flex-col pb-10 pt-2">
                         <p
-                          class="text-text-light dark:text-dark text-xl font-semibold leading-normal"
+                          class="text-light dark:text-dark text-xl font-semibold leading-normal"
                           data-translate="step1_title"
                         >
                           Create a Parent Portal
                         </p>
-                        <p class="text-text-light/80 dark:text-text-dark-300 text-base font-normal leading-normal"
-                           data-translate="step1_desc">
+                        <p class="text-light/80 dark:text-dark-300 text-base font-normal leading-normal"
+                          data-translate="step1_desc">
                           First, let's get you set up with a parent account.
                           It’s quick and easy!
                         </p>
@@ -1534,13 +1534,13 @@
                       </div>
                       <div class="flex flex-1 flex-col pb-10 pt-2">
                         <p
-                          class="text-text-light dark:text-dark text-xl font-semibold leading-normal"
+                          class="text-light dark:text-dark text-xl font-semibold leading-normal"
                           data-translate="step2_title"
                         >
                           Fill in the Fun Form
                         </p>
-                        <p class="text-text-light/80 dark:text-text-dark-300 text-base font-normal leading-normal"
-                           data-translate="step2_desc">
+                        <p class="text-light/80 dark:text-dark-300 text-base font-normal leading-normal"
+                          data-translate="step2_desc">
                           Tell us all about your little one by filling out our
                           colorful application form.
                         </p>
@@ -1559,13 +1559,13 @@
                       </div>
                       <div class="flex flex-1 flex-col pb-10 pt-2">
                         <p
-                          class="text-text-light dark:text-dark text-xl font-semibold leading-normal"
+                          class="text-light dark:text-dark text-xl font-semibold leading-normal"
                           data-translate="step3_title"
                         >
                           Upload Your Documents
                         </p>
-                        <p class="text-text-light/80 dark:text-text-dark-300 text-base font-normal leading-normal"
-                           data-translate="step3_desc">
+                        <p class="text-light/80 dark:text-dark-300 text-base font-normal leading-normal"
+                          data-translate="step3_desc">
                           Time for a little paperwork! Upload the needed
                           documents right here.
                         </p>
@@ -1581,13 +1581,13 @@
                       </div>
                       <div class="flex flex-1 flex-col pt-2">
                         <p
-                          class="text-text-light dark:text-dark text-xl font-semibold leading-normal"
+                          class="text-light dark:text-dark text-xl font-semibold leading-normal"
                           data-translate="step4_title"
                         >
                           Blast Off!
                         </p>
-                        <p class="text-text-light/80 dark:text-dark-300 text-base font-normal leading-normal"
-                           data-translate="step4_desc">
+                        <p class="text-light/80 dark:text-dark-300 text-base font-normal leading-normal"
+                          data-translate="step4_desc">
                           Give everything one last look, hit submit, and you're
                           all done. Welcome aboard!
                         </p>
@@ -1595,7 +1595,7 @@
                     </div>
                     <div class="p-4 @container">
                       <div
-                        class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-soft bg-white dark:bg-background-dark/50 border-4 border-white dark:border-gray-700"
+                        class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-soft bg-white dark:bg-background-white/50 border-4 border-white dark:border-gray-700"
                       >
                         <div
                           class="w-full @xl:w-1/3 bg-center bg-no-repeat aspect-video @xl:aspect-auto @xl:h-full bg-cover rounded-t-lg @xl:rounded-l-lg @xl:rounded-tr-none"
@@ -1618,7 +1618,7 @@
                             What You'll Need
                           </p>
                           <ul
-                            class="text-text-light/80 dark:text-dark-300 text-base font-normal leading-normal list-none space-y-3"
+                            class="text-light/80 dark:text-dark-300 text-base font-normal leading-normal list-none space-y-3"
                           >
                             <li class="flex items-center gap-2" data-translate="doc1">
                               <span
@@ -1654,7 +1654,7 @@
                               <span class="truncate" data-translate="lets_go_button">Let's Go!</span>
                             </button>
                             <button
-                              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-secondary text-dark dark:text-white dark:bg-secondary/30 text-lg font-bold leading-normal tracking-wide w-full sm:w-auto transform hover:scale-105 transition-transform duration-300"
+                              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-secondary text-dark dark:text-dark dark:bg-secondary/30 text-lg font-bold leading-normal tracking-wide w-full sm:w-auto transform hover:scale-105 transition-transform duration-300"
                             >
                               <span class="truncate" data-translate="download_forms_button">Download Forms</span>
                             </button>
@@ -1674,39 +1674,39 @@
                         </h2>
                         <div class="space-y-4">
                           <div
-                            class="p-5 bg-white dark:bg-background-dark/50 rounded-lg shadow-soft border-l-4 border-accent-red"
+                            class="p-5 bg-white dark:bg-background-white/50 rounded-lg shadow-soft border-l-4 border-accent-red"
                           >
                             <p class="font-bold text-lg text-accent-red" data-translate="date1_date">
                               January 15th
                             </p>
                             <p
-                              class="text-md text-text-light/80 dark:text-dark-300"
+                              class="text-md text-light/80 dark:text-dark-300"
                               data-translate="date1_desc"
                             >
                               Registration Opens
                             </p>
                           </div>
                           <div
-                            class="p-5 bg-white dark:bg-background-dark/50 rounded-lg shadow-soft border-l-4 border-primary"
+                            class="p-5 bg-white dark:bg-background-white/50 rounded-lg shadow-soft border-l-4 border-primary"
                           >
                             <p class="font-bold text-lg text-primary" data-translate="date2_date">
                               March 31st
                             </p>
                             <p
-                              class="text-md text-text-light/80 dark:text-dark-300"
+                              class="text-md text-light/80 dark:text-dark-300"
                               data-translate="date2_desc"
                             >
                               Registration Deadline
                             </p>
                           </div>
                           <div
-                            class="p-5 bg-white dark:bg-background-dark/50 rounded-lg shadow-soft border-l-4 border-accent-green"
+                            class="p-5 bg-white dark:bg-background-white/50 rounded-lg shadow-soft border-l-4 border-accent-green"
                           >
                             <p class="font-bold text-lg text-accent-green" data-translate="date3_date">
                               April 15th
                             </p>
                             <p
-                              class="text-md text-text-light/80 dark:text-dark-300"
+                              class="text-md text-light/80 dark:text-dark-300"
                               data-translate="date3_desc"
                             >
                               Welcome Letters Sent Out
@@ -1723,7 +1723,7 @@
                         </h2>
                         <div class="space-y-4">
                           <details
-                            class="group bg-white dark:bg-background-dark/50 p-5 rounded-lg shadow-soft cursor-pointer"
+                            class="group bg-white dark:bg-background-white/50 p-5 rounded-lg shadow-soft cursor-pointer"
                           >
                             <summary
                               class="flex justify-between items-center font-semibold text-lg list-none"
@@ -1745,7 +1745,7 @@
                             </p>
                           </details>
                           <details
-                            class="group bg-white dark:bg-background-dark/50 p-5 rounded-lg shadow-soft cursor-pointer"
+                            class="group bg-white dark:bg-background-white/50 p-5 rounded-lg shadow-soft cursor-pointer"
                           >
                             <summary
                               class="flex justify-between items-center font-semibold text-lg list-none"
@@ -1767,7 +1767,7 @@
                             </p>
                           </details>
                           <details
-                            class="group bg-white dark:bg-background-dark/50 p-5 rounded-lg shadow-soft cursor-pointer"
+                            class="group bg-white dark:bg-background-white/50 p-5 rounded-lg shadow-soft cursor-pointer"
                           >
                             <summary
                               class="flex justify-between items-center font-semibold text-lg list-none"
@@ -1811,7 +1811,7 @@
 
               <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div
-                  class="bg-white dark:bg-background-dark p-6 rounded-xl shadow-lg"
+                  class="bg-white dark:bg-background-white p-6 rounded-xl shadow-lg"
                 >
                   <form class="space-y-4">
                     <div>
