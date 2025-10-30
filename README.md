@@ -157,7 +157,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 For questions or suggestions:
 - **Email**:shamssatour14@gmail.com
-- **Phone**: (555) 123-4567 (demo)
 - **Website**: [Little Sprouts Kindergarten](#) (link to live site if deployed)
 
 ---

@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
       news1_title: 'متعة اليوم الرياضي السنوي!',
       news1_desc: 'استعد ليوم من المرح والألعاب! يومنا الرياضي السنوي على الأبواب. انضم إلينا ليوم من المنافسة الصحية.',
       read_more: 'اقرأ المزيد →',
-      news2_date: '20 2024 سبتمبر',
+      news2_date: '20 سبتمبر 2024',
       news2_title: 'محادثات بين أولياء الأمور والمعلمين',
       news2_desc: 'ندعو جميع أولياء الأمور لحضور اجتماعات أولياء الأمور والمعلمين القادمة لمناقشة تقدم وتطور طفلكم.',
       news3_date: '15 سبتمبر 2024',
@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
       news4_title: 'إشعار عطلة مدرسية',
       news4_desc: 'يرجى ملاحظة أن المدرسة ستكون مغلقة في 10 أكتوبر ليوم صيانة مجدول. ستستأنف الفصول كالمعتاد.',
       event_calendar_title: 'تقويم الفعاليات',
-      calendar_month: 'أكتوبر ٢٠٢٤',
+      calendar_month: 'أكتوبر 2024',
       stay_in_loop_title: 'ابق على اطلاع!',
       stay_in_loop_desc: 'اشترك في نشرتنا الإخبارية للحصول على آخر التحديثات.',
       your_email_placeholder: 'عنوان بريدك الإلكتروني',
@@ -320,7 +320,17 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('[data-translate]').forEach(element => {
       const key = element.getAttribute('data-translate');
       if (translations[lang] && translations[lang][key]) {
-        element.textContent = translations[lang][key];
+        const translation = translations[lang][key];
+
+        if (element.tagName === 'LI' || element.tagName === 'SUMMARY') {
+          // For list items and summaries, we want to preserve the icon
+          const textNode = Array.from(element.childNodes).find(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
+          if (textNode) {
+            textNode.textContent = ` ${translation}`;
+          }
+        } else {
+          element.textContent = translation;
+        }
       }
     });
   };
