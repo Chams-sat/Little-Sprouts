@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-<html class="light" lang="en" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Little Sprouts Kindergarten</title>
     <meta name="description" content="Little Sprouts Kindergarten offers a nurturing environment for early childhood development with play-based learning, experienced teachers, and fun activities. Enroll now!">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
     <!-- External Resources -->
     <link rel="stylesheet" href="dist/output.css">
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Gaegu:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Gaegu:wght@400;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body
-    class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark"
+    class="bg-background-light font-display text-text-light"
   >
     <div
       class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden"
@@ -29,10 +24,10 @@
       <div class="layout-container flex h-full grow flex-col">
         <!-- Header/Navigation -->
         <header
-          class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-subtle-light dark:border-subtle-dark bg-background-light/80 backdrop-blur-sm px-4 py-3 md:px-10"
+          class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-subtle-light bg-background-light/80 backdrop-blur-sm px-4 py-3 md:px-10"
         >
           <div
-            class="flex items-center gap-3 text-text-light dark:text-text-dark"
+            class="flex items-center gap-3 text-text-light"
           >
             <div class="w-10 h-10 text-primary">
               <svg
@@ -46,7 +41,7 @@
               </svg>
             </div>
             <h2
-              class="text-text-light dark:text-text-dark text-lg md:text-xl font-bold leading-tight"
+              class="text-text-light text-lg md:text-xl font-bold leading-tight"
             >
               <span data-translate="site_name">Little Sprouts</span>
             </h2>
@@ -54,31 +49,31 @@
           <div class="flex flex-1 justify-end items-center gap-2 md:gap-6">
             <div class="hidden md:flex gap-8">
               <a
-                class="text-text-light dark:text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors"
+                class="text-text-light text-base font-medium leading-normal hover:text-primary transition-colors"
                 href="#home"
                 data-translate="home"
                 >Home</a
               >
               <a
-                class="text-text-light dark:text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors"
+                class="text-text-light text-base font-medium leading-normal hover:text-primary transition-colors"
                 href="#about"
                 data-translate="about_us"
                 >About Us</a
               >
               <a
-                class="text-text-light dark:text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors"
+                class="text-text-light text-base font-medium leading-normal hover:text-primary transition-colors"
                 href="#programs"
                 data-translate="programs"
                 >Programs</a
               >
               <a
-                class="text-text-light dark:text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors"
+                class="text-text-light text-base font-medium leading-normal hover:text-primary transition-colors"
                 href="#news"
                 data-translate="news"
                 >News</a
               >
               <a
-                class="text-text-light dark:text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors"
+                class="text-text-light text-base font-medium leading-normal hover:text-primary transition-colors"
                 href="#contact"
                 data-translate="contact"
                 >Contact</a
@@ -109,13 +104,13 @@
             </div>
           </div>
         </header>
-        <div id="mobile-menu" class="md:hidden hidden">
+        <div id="mobile-menu" class="md:hidden hidden bg-background-light shadow-lg">
     <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <a href="#home" class="text-dark-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="home">Home</a>
-        <a href="#about" class="text-dark-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="about_us">About Us</a>
-        <a href="#programs" class="text-dark-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="programs">Programs</a>
-        <a href="#news" class="text-dark-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="news">News</a>
-        <a href="#contact" class="text-dark-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-translate="contact">Contact</a>
+        <a href="#home" class="text-text-light hover:bg-primary/10 hover:text-primary block px-3 py-2 rounded-md text-base font-medium" data-translate="home">Home</a>
+        <a href="#about" class="text-text-light hover:bg-primary/10 hover:text-primary block px-3 py-2 rounded-md text-base font-medium" data-translate="about_us">About Us</a>
+        <a href="#programs" class="text-text-light hover:bg-primary/10 hover:text-primary block px-3 py-2 rounded-md text-base font-medium" data-translate="programs">Programs</a>
+        <a href="#news" class="text-text-light hover:bg-primary/10 hover:text-primary block px-3 py-2 rounded-md text-base font-medium" data-translate="news">News</a>
+        <a href="#contact" class="text-text-light hover:bg-primary/10 hover:text-primary block px-3 py-2 rounded-md text-base font-medium" data-translate="contact">Contact</a>
     </div>
 </div>
 
@@ -126,15 +121,7 @@
             class="relative flex h-auto min-h-[calc(100vh-80px)] w-full flex-col justify-center items-center group/design-root overflow-x-hidden"
           >
             <div
-              class="flex min-h-[600px] w-full flex-col gap-8 bg-cover bg-center bg-no-repeat items-center justify-center p-4"
-              alt="Happy children playing in a colorful classroom."
-              style="
-                background-image: linear-gradient(
-                    rgba(255, 107, 107, 0.3),
-                    rgba(255, 217, 61, 0.3)
-                  ),
-                  url('https://lh3.googleusercontent.com/aida-public/AB6AXuAiK6m5vAbzY7e7y8R3L7QYgOwXYRjsRVOM0eR6oy3FeXCVvek5nL_X30ubvci9arDvUqgreZJAdra0Ps1aPcbTLRHKQtG5h3QkUTrnqW9OfbpZvZGj_JHjsgw-RlvgVGmm7tREkV9TsDYpyjURx9Sjo3YEKJfH8mKGHF2JhgeIH0L1XS-HjjizzSDGO03I97cmg2ZQyHqcMIjM18uerD_zBCrpMC-hhWRcW9UdMklQzkx6j9ZuT1dvT_Gvqj3G-sdd7QXPqEyx5x8');
-              "
+              class="hero-background flex min-h-[600px] w-full flex-col gap-8 items-center justify-center p-4"
             >
               <div class="flex flex-col gap-4 text-center max-w-4xl">
                 <h1
@@ -165,13 +152,13 @@
           </section>
           <!-- Why Choose Us Section -->
           <section
-            class="px-4 py-20 sm:px-6 lg:px-8 bg-background-light dark:bg-background-dark"
+            class="px-4 py-20 sm:px-6 lg:px-8 bg-background-light"
           >
             <div class="mx-auto max-w-7xl">
               <div class="flex flex-col gap-12 @container">
                 <div class="flex flex-col gap-4 text-center">
                   <h1
-                    class="text-text-light dark:text-text-dark tracking-light text-5xl font-bold leading-tight"
+                    class="text-text-light tracking-light text-5xl font-bold leading-tight"
                     data-translate="why_choose_us_title"
                   >
                     Why Choose Us
@@ -186,7 +173,7 @@
                 </div>
                 <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
                   <div
-                    class="flex flex-1 flex-col gap-6 rounded-xl border-4 border-accent-blue bg-accent-blue/10 dark:bg-accent-blue/20 p-8 text-center items-center transform hover:-translate-y-2 transition-transform duration-300"
+                    class="flex flex-1 flex-col gap-6 rounded-xl border-4 border-accent-blue bg-accent-blue/10 p-8 text-center items-center transform hover:-translate-y-2 transition-transform duration-300"
                   >
                     <span
                       class="material-symbols-outlined text-accent-blue"
@@ -195,7 +182,7 @@
                     >
                     <div class="flex flex-col gap-2">
                       <h2
-                        class="text-text-light dark:text-text-dark text-2xl font-bold leading-tight"
+                        class="text-text-light text-2xl font-bold leading-tight"
                         data-translate="experienced_teachers_title"
                       >
                         Experienced Teachers
@@ -210,7 +197,7 @@
                     </div>
                   </div>
                   <div
-                    class="flex flex-1 flex-col gap-6 rounded-xl border-4 border-primary bg-primary/10 dark:bg-primary/20 p-8 text-center items-center transform hover:-translate-y-2 transition-transform duration-300"
+                    class="flex flex-1 flex-col gap-6 rounded-xl border-4 border-primary bg-primary/10 p-8 text-center items-center transform hover:-translate-y-2 transition-transform duration-300"
                   >
                     <span
                       class="material-symbols-outlined text-primary"
@@ -219,7 +206,7 @@
                     >
                     <div class="flex flex-col gap-2">
                       <h2
-                        class="text-text-light dark:text-text-dark text-2xl font-bold leading-tight"
+                        class="text-text-light text-2xl font-bold leading-tight"
                         data-translate="play_based_learning_title"
                       >
                         Play-Based Learning
@@ -234,7 +221,7 @@
                     </div>
                   </div>
                   <div
-                    class="flex flex-1 flex-col gap-6 rounded-xl border-4 border-accent-green bg-accent-green/10 dark:bg-accent-green/20 p-8 text-center items-center transform hover:-translate-y-2 transition-transform duration-300"
+                    class="flex flex-1 flex-col gap-6 rounded-xl border-4 border-accent-green bg-accent-green/10 p-8 text-center items-center transform hover:-translate-y-2 transition-transform duration-300"
                   >
                     <span
                       class="material-symbols-outlined text-accent-green"
@@ -264,18 +251,18 @@
           <!-- Programs Section -->
           <section
             id="programs"
-            class="bg-subtle-light dark:bg-subtle-dark/20 px-4 py-20 sm:px-6 lg:px-8"
+            class="bg-subtle-light px-4 py-20 sm:px-6 lg:px-8"
           >
             <div class="mx-auto max-w-7xl">
               <h2
-                class="text-text-light dark:text-text-dark text-5xl font-bold leading-tight pb-12 text-center"
+                class="text-text-light text-5xl font-bold leading-tight pb-12 text-center"
                 data-translate="our_programs_title"
               >
                 Our Programs
               </h2>
               <div class="flex flex-col max-w-4xl mx-auto gap-4">
                 <details
-                  class="flex flex-col border-b-4 border-accent-green rounded-lg bg-white dark:bg-white-800 p-4 group"
+                  class="flex flex-col border-b-4 border-accent-green rounded-lg bg-white p-4 group"
                   open=""
                 >
                   <summary
@@ -303,7 +290,7 @@
                   </p>
                 </details>
                 <details
-                  class="flex flex-col border-b-4 border-accent-blue rounded-lg bg-white dark:bg-white-800 p-4 group"
+                  class="flex flex-col border-b-4 border-accent-blue rounded-lg bg-white p-4 group"
                 >
                   <summary
                     class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none"
@@ -330,7 +317,7 @@
                   </p>
                 </details>
                 <details
-                  class="flex flex-col border-b-4 border-primary rounded-lg bg-white dark:bg-white-800 p-4 group"
+                  class="flex flex-col border-b-4 border-primary rounded-lg bg-white p-4 group"
                 >
                   <summary
                     class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none"
@@ -367,7 +354,7 @@
               </h2>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-10 p-4">
                 <div
-                  class="flex flex-col items-center text-center p-8 bg-accent-green rounded-xl shadow-lg border-4 border-subtle-dark dark:border-text-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                  class="flex flex-col items-center text-center p-8 bg-accent-green rounded-xl shadow-lg border-4 border-subtle-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <span
                     class="material-symbols-outlined text-dark text-6xl mb-4"
@@ -381,7 +368,7 @@
                   </p>
                 </div>
                 <div
-                  class="flex flex-col items-center text-center p-8 bg-primary rounded-xl shadow-lg border-4 border-subtle-dark dark:border-text-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                  class="flex flex-col items-center text-center p-8 bg-primary rounded-xl shadow-lg border-4 border-subtle-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <span
                     class="material-symbols-outlined text-dark text-6xl mb-4"
@@ -395,7 +382,7 @@
                   </p>
                 </div>
                 <div
-                  class="flex flex-col items-center text-center p-8 bg-accent-blue rounded-xl shadow-lg border-4 border-subtle-dark dark:border-text-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                  class="flex flex-col items-center text-center p-8 bg-accent-blue rounded-xl shadow-lg border-4 border-subtle-dark transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <span
                     class="material-symbols-outlined text-text-light text-6xl mb-4"
@@ -412,7 +399,7 @@
             </div>
             <div class="py-16 max-w-7xl mx-auto">
               <h2
-                class="text-text-light dark:text-text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
+                class="text-text-light text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
                 data-translate="daily_rhythm_title"
               >
                 Our Daily Rhythm
@@ -442,15 +429,13 @@
                       </div>
                     </div>
                     <div class="w-1/2 flex justify-start pl-8">
-                      <div
-                        class="w-10 h-10 rounded-full bg-accent-red ring-4 ring-background-dark dark:ring-background-dark border-4 border-text-dark"
-                      ></div>
+                      <div class="w-10 h-10 rounded-full bg-accent-red ring-4 ring-background-dark border-4 border-text-dark"></div>
                     </div>
                   </div>
                   <div class="flex items-center w-full">
                     <div class="w-1/2 flex justify-end pr-8">
                       <div
-                        class="w-10 h-10 rounded-full bg-accent-green ring-4 ring-background-dark dark:ring-background-dark border-4 border-text-dark"
+                        class="w-10 h-10 rounded-full bg-accent-green ring-4 ring-background-dark border-4 border-text-dark"
                       ></div>
                     </div>
                     <div class="w-1/2 flex justify-start pl-10">
@@ -493,14 +478,14 @@
                     </div>
                     <div class="w-1/2 flex justify-start pl-8">
                       <div
-                        class="w-10 h-10 rounded-full bg-secondary ring-4 ring-background-dark dark:ring-background-dark border-4 border-text-dark"
+                        class="w-10 h-10 rounded-full bg-secondary ring-4 ring-background-dark border-4 border-text-dark"
                       ></div>
                     </div>
                   </div>
                   <div class="flex items-center w-full">
                     <div class="w-1/2 flex justify-end pr-8">
                       <div
-                        class="w-10 h-10 rounded-full bg-accent-red ring-4 ring-background-dark dark:ring-background-dark border-4 border-text-dark"
+                        class="w-10 h-10 rounded-full bg-accent-red ring-4 ring-background-dark border-4 border-text-dark"
                       ></div>
                     </div>
                     <div class="w-1/2 flex justify-start pl-10">
@@ -530,7 +515,7 @@
           <!-- About Us Section -->
           <section
             id="about"
-            class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-12 text-center bg-background-light dark:bg-background-dark/20"
+            class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-12 text-center bg-background-light"
           >
             <h2
               class="text-light dark:text-dark text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-10 pt-5 text-center"
@@ -559,7 +544,7 @@
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto"
               >
                 <div
-                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-light rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[-2deg]"
+                  class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[-2deg]"
                 >
                   <div class="p-4 bg-primary/20 rounded-full mb-4">
                     <span
@@ -574,7 +559,7 @@
                   </p>
                 </div>
                 <div
-                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-light rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[2deg]"
+                  class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[2deg]"
                 >
                   <div class="p-4 bg-secondary/20 rounded-full mb-4">
                     <span
@@ -589,7 +574,7 @@
                   </p>
                 </div>
                 <div
-                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-light rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[-2deg]"
+                  class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[-2deg]"
                 >
                   <div class="p-4 bg-accent-green/20 rounded-full mb-4">
                     <span
@@ -604,7 +589,7 @@
                   </p>
                 </div>
                 <div
-                  class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-light rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[2deg]"
+                  class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform hover:scale-105 hover:rotate-[2deg]"
                 >
                   <div class="p-4 bg-accent-blue/20 rounded-full mb-4">
                     <span
@@ -634,7 +619,7 @@
               </h2>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div
-                  class="bg-white dark:bg-subtle-light rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-primary"
+                  class="bg-white rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-primary"
                 >
                   <img
                     class="w-full h-72 object-cover"
@@ -653,7 +638,7 @@
                   </div>
                 </div>
                 <div
-                  class="bg-white dark:bg-subtle-light rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-accent-blue"
+                  class="bg-white rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-accent-blue"
                 >
                   <img
                     class="w-full h-72 object-cover"
@@ -674,11 +659,11 @@
                   </div>
                 </div>
                 <div
-                  class="bg-white dark:bg-subtle-light rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-accent-green"
+                  class="bg-white rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border-4 border-accent-green"
                 >
                   <img
                     class="w-full h-72 object-cover"
-                    data-alt="Friendly photo of an Assistant Teacher, Emily White"
+                    alt="Friendly photo of an Assistant Teacher, Emily White"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5gAq0LryQwINsVkEw6Uttd4Rmb_0CvdsUf5IK68gGg1hDIFPamInUGwGYE_A0dOvCqsMTw97MnBh596Y3yENBi_W7VBnvUfqiWy2N7NJX43VH7i5FrPRyqY85friOEZbVTSgGORUmTIiM5ic_m1Ea6OUyg3B9XQyt4hkG2foCuIbBKrRKWLKYRgiq5yQEQYQLhBj1uM2ukd4HSealrIFrmTcropkECoyDYzM7hHfkEpVI83PrMGbzqUD9LSvTIw1Zqld30vhWW0c"
                   />
                   <div class="p-6 text-center">
@@ -703,14 +688,14 @@
           >
             <div class="mx-auto max-w-7xl text-center">
               <h2
-                class="text-text-light dark:text-text-dark text-5xl font-bold leading-tight pb-12"
+                class="text-text-light text-5xl font-bold leading-tight pb-12"
                 data-translate="what_parents_say_title"
               >
                 What Parents Say
               </h2>
               <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <div
-                  class="bg-white dark:bg-white-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                 >
                   <img
                     alt="Parent photo"
@@ -729,7 +714,7 @@
                   </p>
                 </div>
                 <div
-                  class="bg-white dark:bg-white-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                 >
                   <img
                     alt="Parent photo"
@@ -748,7 +733,7 @@
                   </p>
                 </div>
                 <div
-                  class="bg-white dark:bg-white-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                 >
                   <img
                     alt="Parent photo"
@@ -771,11 +756,11 @@
           </section>
           <!-- Gallery Section -->
           <section
-            class="bg-subtle-light dark:bg-subtle-dark/20 px-4 py-20 sm:px-6 lg:px-8"
+            class="bg-subtle-light px-4 py-20 sm:px-6 lg:px-8"
           >
             <div class="mx-auto max-w-7xl text-center">
               <h2
-                class="text-text-light dark:text-text-dark text-5xl font-bold leading-tight pb-12"
+                class="text-text-light text-5xl font-bold leading-tight pb-12"
                 data-translate="gallery_title"
               >
                 Our Gallery of Smiles
@@ -785,14 +770,14 @@
                   <div>
                     <img
                       class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
-                      data-alt="Children painting together."
+                      alt="Children painting together."
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW1IE7-SuG-PVIgzazBAoEZJX1GjskBR2uRylix-uGyLvsOfCT_uesxTQ2EG4x7WMwhLlN0_X3jxNrbVtvxnsYSR0Tnog68sB7gcUzcw6IyR-LVZ6Pj6cxUV3DdPLW9AUuXfMoRuwqE66gfozXlPS-l5DvVLoPHsSW_N0mdH2xJGYH0mHDayLPcvff2tPuV3QGK6ZVKh2GCSdQRak2J5xOsGmnTGFpf_E9xLDHRCz-skVS9wbdQCok_Evo6F6dT2iqHUWcTPpwEgc"
                     />
                   </div>
                   <div>
                     <img
                       class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
-                      data-alt="Teacher reading a story to a group of children."
+                      alt="Teacher reading a story to a group of children."
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR0m6Aa5T62ILetR0YviUH_yQlxXnUCYOsL7PJJEKmTtn9vwrF9-lefdj3Hhsp3KTgBlAo5VO8-b4jMdvhySAFLEnm3OsXM8zJ4OSuNN8x_dEC4R66PAL1n2j8AfCg8OSBe9kbEveVFx-HMmR-SIeeLDeCPQxSEhXJGOxMdl7LRjQsBlyu89_2FJIX3vxYQyPQg_jaUSHgWK-D9O4sn5to5FOfx-manf8u2AaFfzQ4tMrL5J3hJ3V5ZitjbsoUBxgTEiWNk4sxSlc"
                     />
                   </div>
@@ -801,14 +786,14 @@
                   <div>
                     <img
                       class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
-                      data-alt="Children playing with blocks on the floor."
+                      alt="Children playing with blocks on the floor."
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdyznrAGva1OBT5XbtfpdmCTUacztLb5h2_JvYXodukKmJxrJVMhLT9OFT5EGrbiUTRDnji5Qz7ZIJBFAFTF5aNjqnuPHv3Iq5Gc1DKE8hIUYGq3ubNu_paYYuA5f9nMPCwjOWkhC9s0VZGV2Vbo3NZ4wE-wd3Tt_5T3XHo6Uu9jlAFRvm3N2JTR-WGJO-nS0_gZBGBuOerik4DD4i8c4vLsBds26zMJlCNn9OIAusfuA-Sbs6LDRNclSLtoJMScpXF4XTkQlgy4M"
                     />
                   </div>
                   <div>
                     <img
                       class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
-                      data-alt="Outdoor playground with kids on swings."
+                      alt="Outdoor playground with kids on swings."
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuB81MtmTkekzLGMUA3D_1rUUGju97AyS6bCKmO0zO001vqxh3XymzAMVJxhZw2XM63cDustQZMFLhAFgC70hpdEiWO3HGcPzKdOlA9Z_4RFsNGcg9z9j-vVVdO5JXdbW_a63VhSct5Al41BHfaGY_j0dZsXCUxKce7tCEc9NcmVzDRoYoVhwFcqerepEQGXrBhNwsXWM-_8JCzRkv-6oTPfqEZDv0VVRYYmNYcTC9I_MobwM1NdZ4wRO-Yev0CyvO7uwAmUu4eQiZ4"
                     />
                   </div>
@@ -817,14 +802,14 @@
                   <div>
                     <img
                       class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
-                      data-alt="Children doing a science experiment."
+                      alt="Children doing a science experiment."
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQO0whpBCKDTpMq9KNuLPgZsvsRRwi9wz5YGQsGoLE30prpMCAnzmjKLgtWrglg7Xw1vouULmC-ZzFV65VndsVU37a7eWoxz_wUkxkRrw12Z44YdYO9u_YXn4sQYdGbbDbPoykrInRKQEJoAdIlw2WEMAahh1i109GM46bZMMnF1qA9jbBV32kBFL0FWlMDNBbU3Y9KyAvY3EqkklQGdxCfGrqXLunKWQZ0L5d856XKTKclbG6h7A9rJMEbf5fKTwzM96PzM4mHu8"
                     />
                   </div>
                   <div>
                     <img
                       class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
-                      data-alt="A colorful classroom with art supplies."
+                      alt="A colorful classroom with art supplies."
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUpK08WCnHqJxmmvDgo2hC1oXlGZlk4oOeDOuzWObb1xkcK8E7jraYDRAHMH0LD7bGvyItxkDxhA8CEY18bbNvDdJTWYyT3TXzD8-pCK7ZT9THSE3abb5toT60ly151u0QuPnv2CQtDumYkqZm0_VvmxktiODtjsLj96TA31ufhkiBiM7ZxSbcso0C2W2be-IduQZm69B3fc3XNtYFKvcfaa_M3BOYjS4blR-XPeeO7-WfF6mNYEjQ5Ta5iaXS58DBdeg1umFI258"
                     />
                   </div>
@@ -833,24 +818,24 @@
                   <div>
                     <img
                       class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
-                      data-alt="Smiling child holding a drawing."
+                      alt="Smiling child holding a drawing."
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAqK_paBrD_BzQe2o6PmaB-tFoPStvXSnixv5xO03f8JjBC-enprTV_Mpz7O_FQgH4QL4HqMn9a7jSB7YYFH7oeX954Ze6hSB-dtKRPTH1MLKMdYDEog83xBvZd_DBzvGTUUBwFHAqAIkUG6ib_Ty0-1mPnvZkGP13qWVLl2z0SLUtz1ZmiYJQGDuFWU49FLv2UrFDYjExkCmuNB7kkmpctHcMjhISnTCw4xdCS6ftf1cB0iOt9nWazTa0eK4_u7mSZEH9cD0lQp4"
                     />
                   </div>
                   <div>
                     <img
                       class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300"
-                      data-alt="Group of kids sitting in a circle for a lesson."
+                      alt="Group of kids sitting in a circle for a lesson."
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj--dvgEhKDDMqWxPYWUGPqRu4EsSUT3r3rUal77_WrK8cjpwwIqluf5hKPw3jkOILiNh8VUSWlKZsLzjwZwAxRbHQtnKiBbo2GUfaXBUCFe6vQP3VAa-JJcPTkoaFli6lApiTGNguWJ9s9Ylix0dyVb_DEqyuigBaeoScZlL9c2cn-WlcKhVkXYyQObwh0Fn7HvQaM8TME5JatSF9ukc6X04pn2-_k9Lw_P6fwDFrmECExOvstr27KdhAY3KxHovcn-mJwu4OsJE"
                     />
                   </div>
                 </div>
               </div>
             </div>
-            <div class="px-4 py-20 sm:px-6 lg:px-8 dark:bg-accent/20">
+            <div class="px-4 py-20 sm:px-6 lg:px-8">
               <div class="mx-auto max-w-2xl text-center">
                 <h2
-                  class="text-4xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-5xl"
+                  class="text-4xl font-bold tracking-tight text-text-light sm:text-5xl"
                   data-translate="schedule_visit_title"
                 >
                   Schedule a Visit Today!
@@ -881,7 +866,7 @@
           <section id="news" class="px-4 py-16 bg-light/10">
             <div class="px-4 py-8">
               <h2
-                class="text-text-light dark:text-text-dark text-5xl text-center font-bold leading-tight pb-12"
+                class="text-text-light text-5xl text-center font-bold leading-tight pb-12"
                 data-translate="our_news_title"
               >
                 Our News
@@ -901,7 +886,7 @@
                       </div>
                       <input
                         class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-full text-light dark:text-dark focus:outline-0 focus:ring-0 border-none bg-white dark:bg-background-white focus:border-none h-full placeholder:text-light/70 dark:placeholder:text-white/70 px-4 text-base font-medium leading-normal"
-                        placeholder="Find fun news & events..."
+                        placeholder="Find fun news & events..." data-translate="find_news_placeholder"
                         data-translate="find_news_placeholder"
                         value=""
                       />
@@ -915,12 +900,12 @@
                     <p class="text-white font-bold leading-normal" data-translate="news_tab">News</p>
                   </button>
                   <button
-                    class="flex h-12 shrink-0 items-center justify-center gap-x-2.5 rounded-full bg-secondary dark:bg-neutral/30 px-6 text-light dark:text-dark shadow-md transform hover:scale-105 transition-transform"
+                    class="flex h-12 shrink-0 items-center justify-center gap-x-2.5 rounded-full bg-secondary px-6 text-light shadow-md transform hover:scale-105 transition-transform"
                   >
                     <p class="text-base font-bold leading-normal" data-translate="events_tab">Events</p>
                   </button>
                   <button
-                    class="flex h-12 shrink-0 items-center justify-center gap-x-2.5 rounded-full bg-secondary dark:bg-neutral/30 px-6 text-light dark:text-dark shadow-md transform hover:scale-105 transition-transform"
+                    class="flex h-12 shrink-0 items-center justify-center gap-x-2.5 rounded-full bg-secondary px-6 text-light shadow-md transform hover:scale-105 transition-transform"
                   >
                     <p class="text-base font-bold leading-normal" data-translate="holidays_tab">Holidays</p>
                   </button>
@@ -929,26 +914,20 @@
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
               <div class="lg:col-span-2 space-y-8">
-                <h2
-                  class="text-4xl font-bold wavy-underline text-neutral dark:text-primary"
-                  data-translate="latest_news_title"
-                >
+                <h2 class="text-4xl font-bold wavy-underline text-neutral" data-translate="latest_news_title">
                   Latest News & Giggles
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div
-                    class="bg-white dark:bg-neutral/20 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
                   >
                     <img
                       class="h-52 w-full object-cover"
-                      data-alt="Children running in a field for sports day"
+                      alt="Children running in a field for sports day"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgtppaUiVb-motdxUtWt3X9nZO_y1jbq2om1dXzvqmnZdRNLdea4Jd98eFTIHu4jh2_rTMXW-WNnk3gBMDFIwbk-gZ8eW_loWM9o8-x6LPo_6YoWQ2c5GsVtSGTfncLXYdSFHhFz4bIifg36FKv64Xdb1a5U6RsLK4tg2qY2Aw-kHvZWPETu0i5qYzMmt0gzWZGLr7urg59684YlyvghK6RkJrkFPmTgBDRV-CTmME5Y2bePnzRBKW1Ew45fZbIY0oT7A4wM7tFRU"
                     />
                     <div class="p-6">
-                      <p
-                        class="text-sm font-medium text-accent dark:text-accent"
-                        data-translate="news1_date"
-                      >
+                      <p class="text-sm font-medium text-accent" data-translate="news1_date">
                         September 25, 2024
                       </p>
                       <h3
@@ -971,18 +950,15 @@
                     </div>
                   </div>
                   <div
-                    class="bg-white dark:bg-neutral/20 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
                   >
                     <img
                       class="h-52 w-full object-cover"
-                      data-alt="A classroom with a teacher talking to a parent"
+                      alt="A classroom with a teacher talking to a parent"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBeYlUVkYi1mEUH_3obGGnIkMojuTs3jd5EaKPagfYzqawnnah0jHLLVE9hAONwOEkGzi_fqTDDQDYnnNy5j3l86mIXpXt5qF3XcbMTCYHZ5QThfnz1r5oewlXR8atTYxIQUs0Zd5URFuo39ijIW-GQp9NZnjjZ0gBMAIb43L6kMrhwiOjjXqJgM0pKEPRJ40ekAy_NLdha0r_u1CxLqlSNadQeRY8vHbxypXRIwjX8fMLnAAsdbOCl_oMqB898aHIZ4MqxpcuRug"
                     />
                     <div class="p-6">
-                      <p
-                        class="text-sm font-medium text-accent dark:text-accent"
-                        data-translate="news2_date"
-                      >
+                      <p class="text-sm font-medium text-accent" data-translate="news2_date">
                         September 20, 2024
                       </p>
                       <h3
@@ -1005,18 +981,15 @@
                     </div>
                   </div>
                   <div
-                    class="bg-white dark:bg-neutral/20 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
                   >
                     <img
                       class="h-52 w-full object-cover"
-                      data-alt="Colorful handprints on a wall, art and craft fair"
+                      alt="Colorful handprints on a wall, art and craft fair"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwvRoXxeCFmc5zzp5BJCTS3fgh2r4SGI0Ek913Stnyt-jfPpoTVaegd9qvHUqZHDHsblaA2GQbJ7H5Q3Hz8N3n40f_FFH_tlXBJeg5B7TvFYo3fIstoUhTo1coed0rblMtJIzJAEmM2fDnA2InagJS7AYgy7_jM_FFFxFpj4JbRpGSTyhmX9NRIBRvmi0Jla8YGwVl8zFXakqXBzWZNobauenBSffNbpeopB-13KQLjyO6bTwNIaBrEWXG6dEC3K-GHTqu8HPlQwE"
                     />
                     <div class="p-6">
-                      <p
-                        class="text-sm font-medium text-accent dark:text-accent"
-                        data-translate="news3_date"
-                      >
+                      <p class="text-sm font-medium text-accent" data-translate="news3_date">
                         September 15, 2024
                       </p>
                       <h3
@@ -1039,18 +1012,15 @@
                     </div>
                   </div>
                   <div
-                    class="bg-white dark:bg-neutral/20 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
                   >
                     <img
                       class="h-52 w-full object-cover"
-                      data-alt="School building with a closed sign"
+                      alt="School building with a closed sign"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0jPsCeajqJMm658BvvYVcf_mhESiLGlvkbUI6EGRNKCh1qyzzXZ-hV0hfsdtrz-nPO0Y8BNOBELYz0M7t-6jZsToCAoRI6eNlQSis3JprEGrGrmq28ASwycnCupxWOBJdNqsCgc_Ye7iJQc19heBjG_ekytEQ19nEyY-98NqwowPtvo2yWQO6Xwh50bx108hXDlwIjlzkcZGnp_Thc1m7EQCknSr0JvgFZWsni6tdyLJhbzp5g7BlbpDolIBogmppcWud-y6Jl9Q"
                     />
                     <div class="p-6">
-                      <p
-                        class="text-sm font-medium text-accent dark:text-accent"
-                        data-translate="news4_date"
-                      >
+                      <p class="text-sm font-medium text-accent" data-translate="news4_date">
                         September 10, 2024
                       </p>
                       <h3
@@ -1075,11 +1045,9 @@
                 </div>
               </div>
               <div class="lg:col-span-1 space-y-8">
-                <div
-                  class="bg-white dark:bg-neutral/20 rounded-xl shadow-lg p-6"
-                >
+                <div class="bg-white rounded-xl shadow-lg p-6">
                   <h3
-                    class="text-3xl font-bold text-center mb-5 text-neutral dark:text-primary"
+                    class="text-3xl font-bold text-center mb-5 text-neutral"
                     data-translate="event_calendar_title"
                   >
                     Event Calendar
@@ -1091,9 +1059,7 @@
                       <button
                         class="hover:bg-primary/20 rounded-full transition-colors"
                       >
-                        <div
-                          class="flex size-10 items-center justify-center text-light dark:text-dark"
-                        >
+                        <div class="flex size-10 items-center justify-center text-light">
                           <span class="material-symbols-outlined"
                             >chevron_left</span
                           >
@@ -1108,9 +1074,7 @@
                       <button
                         class="hover:bg-primary/20 rounded-full transition-colors"
                       >
-                        <div
-                          class="flex size-10 items-center justify-center text-light dark:text-dark"
-                        >
+                        <div class="flex size-10 items-center justify-center text-light">
                           <span class="material-symbols-outlined"
                             >chevron_right</span
                           >
@@ -1154,7 +1118,7 @@
                         S
                       </p>
                       <button
-                        class="h-10 w-full text-text-light dark:text-dark col-start-3 text-sm font-medium leading-normal"
+                        class="h-10 w-full text-text-light col-start-3 text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1163,7 +1127,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1172,7 +1136,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1181,7 +1145,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1190,7 +1154,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1199,7 +1163,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1208,7 +1172,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1217,7 +1181,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1226,7 +1190,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1235,16 +1199,16 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-text-light text-sm font-medium leading-normal"
                       >
                         <div
-                          class="flex size-full items-center justify-center rounded-full bg-secondary/30 dark:bg-secondary/50"
+                          class="flex size-full items-center justify-center rounded-full bg-secondary/30"
                         >
                           10
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1253,7 +1217,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1262,7 +1226,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1271,7 +1235,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1280,7 +1244,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1289,7 +1253,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1298,7 +1262,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1307,7 +1271,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1325,7 +1289,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1334,7 +1298,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1343,7 +1307,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1352,7 +1316,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1361,7 +1325,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1370,7 +1334,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1379,7 +1343,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1388,7 +1352,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1397,7 +1361,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1406,7 +1370,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1415,7 +1379,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                       >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1424,7 +1388,7 @@
                         </div>
                       </button>
                       <button
-                        class="h-10 w-full text-light dark:text-dark text-sm font-medium leading-normal"
+                        class="h-10 w-full text-light text-sm font-medium leading-normal"
                         >
                         <div
                           class="flex size-full items-center justify-center rounded-full hover:bg-primary/30 transition-colors"
@@ -1436,23 +1400,20 @@
                   </div>
                 </div>
                 <div
-                  class="bg-white dark:bg-neutral/20 rounded-xl shadow-lg p-6"
+                  class="bg-white rounded-xl shadow-lg p-6"
                 >
                   <h3
-                    class="text-3xl font-bold text-center mb-4 text-neutral dark:text-primary"
+                    class="text-3xl font-bold text-center mb-4 text-neutral"
                     data-translate="stay_in_loop_title"
                   >
                     Stay in the Loop!
                   </h3>
-                  <p
-                    class="text-center text-light/80 dark:text-dark/80 mb-6"
-                    data-translate="stay_in_loop_desc"
-                  >
+                  <p class="text-center text-light/80 mb-6" data-translate="stay_in_loop_desc">
                     Subscribe to our newsletter for the latest updates.
                   </p>
                   <form class="flex flex-col gap-4">
                     <input
-                      class="form-input w-full rounded-full border-gray-300 dark:border-neutral/50 bg-background-light dark:bg-background-dark/50 text-light dark:text-dark focus:border-primary focus:ring-0 h-12 px-5"
+                      class="form-input w-full rounded-full border-gray-300 bg-background-light text-light focus:border-primary focus:ring-0 h-12 px-5"
                       placeholder="Your email address"
                       data-translate="your_email_placeholder"
                       type="email"
@@ -1471,7 +1432,7 @@
           <!-- Admissions Section -->
           <section
             id="admissions"
-            class="bg-subtle-light dark:bg-subtle-dark/20 px-4 py-20 sm:px-6 lg:px-8"
+            class="bg-subtle-light px-4 py-20 sm:px-6 lg:px-8"
           >
             <div class="px-4 py-8">
               <div class="layout-container flex h-full grow flex-col">
@@ -1503,9 +1464,7 @@
                             >emoji_people</span
                           >
                         </div>
-                        <div
-                          class="w-1 bg-secondary/30 dark:bg-gray-700 h-full rounded-full"
-                        ></div>
+                        <div class="w-1 bg-secondary/30 h-full rounded-full"></div>
                       </div>
                       <div class="flex flex-1 flex-col pb-10 pt-2">
                         <p
@@ -1528,9 +1487,7 @@
                             >edit_document</span
                           >
                         </div>
-                        <div
-                          class="w-1 bg-secondary/30 dark:bg-gray-700 h-full rounded-full"
-                        ></div>
+                        <div class="w-1 bg-secondary/30 h-full rounded-full"></div>
                       </div>
                       <div class="flex flex-1 flex-col pb-10 pt-2">
                         <p
@@ -1553,9 +1510,7 @@
                             >cloud_upload</span
                           >
                         </div>
-                        <div
-                          class="w-1 bg-secondary/30 dark:bg-gray-700 h-full rounded-full"
-                        ></div>
+                        <div class="w-1 bg-secondary/30 h-full rounded-full"></div>
                       </div>
                       <div class="flex flex-1 flex-col pb-10 pt-2">
                         <p
@@ -1595,15 +1550,9 @@
                     </div>
                     <div class="p-4 @container">
                       <div
-                        class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-soft bg-white dark:bg-background-white/50 border-4 border-white dark:border-gray-700"
+                        class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-soft bg-white border-4 border-white"
                       >
-                        <div
-                          class="w-full @xl:w-1/3 bg-center bg-no-repeat aspect-video @xl:aspect-auto @xl:h-full bg-cover rounded-t-lg @xl:rounded-l-lg @xl:rounded-tr-none"
-                          data-alt="A child playing with colorful blocks"
-                          style="
-                            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzP516wNi-DKaFgI16ezqbOO1TwoyPypaGelFcmX3JiLGFHMrNxNN2zL2YL5OB5Ld_q47fRX3uiVdMtJaT5utdP7vUFmLFbadlayHmzspO7uuMvglQI9FvFdv8cYJvpvqQZPiZfn9yHsz1JFzFsxB0AOuxGMHBDINX4cnH0ysviFL3petG6J1jynAPsnUAQNRv8vWoBu88nTMGBkA1g1prgfm0z3Wm6cNNqr_YKTD5ALbJtO6PWBUHw_c7SHuka7M8vTnU-OR8J1Y');
-                          "
-                        ></div>
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzP516wNi-DKaFgI16ezqbOO1TwoyPypaGelFcmX3JiLGFHMrNxNN2zL2YL5OB5Ld_q47fRX3uiVdMtJaT5utdP7vUFmLFbadlayHmzspO7uuMvglQI9FvFdv8cYJvpvqQZPiZfn9yHsz1JFzFsxB0AOuxGMHBDINX4cnH0ysviFL3petG6J1jynAPsnUAQNRv8vWoBu88nTMGBkA1g1prgfm0z3Wm6cNNqr_YKTD5ALbJtO6PWBUHw_c7SHuka7M8vTnU-OR8J1Y" alt="A child playing with colorful blocks" class="w-full @xl:w-1/3 object-cover aspect-video @xl:aspect-auto @xl:h-full rounded-t-lg @xl:rounded-l-lg @xl:rounded-tr-none" />
                         <img
                           alt="A child playing with colorful blocks"
                           class="invisible absolute size-0"
@@ -1618,31 +1567,31 @@
                             What You'll Need
                           </p>
                           <ul
-                            class="text-light/80 dark:text-dark-300 text-base font-normal leading-normal list-none space-y-3"
+                            class="text-light/80 text-base font-normal leading-normal list-none space-y-3"
                           >
-                            <li class="flex items-center gap-2" data-translate="doc1">
+                            <li class="flex items-center gap-2">
                               <span
                                 class="material-symbols-outlined text-accent-green"
                                 >check_box</span
-                              >Birth Certificate
+                              ><span data-translate="doc1">Birth Certificate</span>
                             </li>
-                            <li class="flex items-center gap-2" data-translate="doc2">
+                            <li class="flex items-center gap-2">
                               <span
                                 class="material-symbols-outlined text-accent-green"
                                 >check_box</span
-                              >Proof of Residence
+                              ><span data-translate="doc2">Proof of Residence</span>
                             </li>
-                            <li class="flex items-center gap-2" data-translate="doc3">
+                            <li class="flex items-center gap-2">
                               <span
                                 class="material-symbols-outlined text-accent-green"
                                 >check_box</span
-                              >Immunization Records
+                              ><span data-translate="doc3">Immunization Records</span>
                             </li>
-                            <li class="flex items-center gap-2" data-translate="doc4">
+                            <li class="flex items-center gap-2">
                               <span
                                 class="material-symbols-outlined text-accent-green"
                                 >check_box</span
-                              >Parent/Guardian ID
+                              ><span data-translate="doc4">Parent/Guardian ID</span>
                             </li>
                           </ul>
                           <div
@@ -1654,7 +1603,7 @@
                               <span class="truncate" data-translate="lets_go_button">Let's Go!</span>
                             </button>
                             <button
-                              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-secondary text-dark dark:text-dark dark:bg-secondary/30 text-lg font-bold leading-normal tracking-wide w-full sm:w-auto transform hover:scale-105 transition-transform duration-300"
+                              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-secondary text-dark text-lg font-bold leading-normal tracking-wide w-full sm:w-auto transform hover:scale-105 transition-transform duration-300"
                             >
                               <span class="truncate" data-translate="download_forms_button">Download Forms</span>
                             </button>
@@ -1667,14 +1616,14 @@
                     >
                       <div>
                         <h2
-                          class="text-3xl font-bold mb-6 text-dark dark:text-primary"
+                          class="text-3xl font-bold mb-6 text-dark"
                           data-translate="mark_calendar_title"
                         >
                           Mark Your Calendar!
                         </h2>
                         <div class="space-y-4">
                           <div
-                            class="p-5 bg-white dark:bg-background-white/50 rounded-lg shadow-soft border-l-4 border-accent-red"
+                            class="p-5 bg-white rounded-lg shadow-soft border-l-4 border-accent-red"
                           >
                             <p class="font-bold text-lg text-accent-red" data-translate="date1_date">
                               January 15th
@@ -1687,7 +1636,7 @@
                             </p>
                           </div>
                           <div
-                            class="p-5 bg-white dark:bg-background-white/50 rounded-lg shadow-soft border-l-4 border-primary"
+                            class="p-5 bg-white rounded-lg shadow-soft border-l-4 border-primary"
                           >
                             <p class="font-bold text-lg text-primary" data-translate="date2_date">
                               March 31st
@@ -1700,7 +1649,7 @@
                             </p>
                           </div>
                           <div
-                            class="p-5 bg-white dark:bg-background-white/50 rounded-lg shadow-soft border-l-4 border-accent-green"
+                            class="p-5 bg-white rounded-lg shadow-soft border-l-4 border-accent-green"
                           >
                             <p class="font-bold text-lg text-accent-green" data-translate="date3_date">
                               April 15th
@@ -1716,20 +1665,19 @@
                       </div>
                       <div>
                         <h2
-                          class="text-3xl font-bold mb-6 text-dark dark:text-primary"
+                          class="text-3xl font-bold mb-6 text-dark"
                           data-translate="got_questions_title"
                         >
                           Got Questions?
                         </h2>
                         <div class="space-y-4">
                           <details
-                            class="group bg-white dark:bg-background-white/50 p-5 rounded-lg shadow-soft cursor-pointer"
-                          >
+                            class="group bg-white p-5 rounded-lg shadow-soft cursor-pointer"
+                          > 
                             <summary
                               class="flex justify-between items-center font-semibold text-lg list-none"
-                              data-translate="faq1_q"
                             >
-                              Can I save my application and come back?
+                              <span data-translate="faq1_q">Can I save my application and come back?</span>
                               <span
                                 class="material-symbols-outlined transform group-open:rotate-180 transition-transform text-secondary"
                                 >expand_more</span
@@ -1745,13 +1693,12 @@
                             </p>
                           </details>
                           <details
-                            class="group bg-white dark:bg-background-white/50 p-5 rounded-lg shadow-soft cursor-pointer"
+                            class="group bg-white p-5 rounded-lg shadow-soft cursor-pointer"
                           >
                             <summary
                               class="flex justify-between items-center font-semibold text-lg list-none"
-                              data-translate="faq2_q"
                             >
-                              What if I get stuck?
+                              <span data-translate="faq2_q">What if I get stuck?</span>
                               <span
                                 class="material-symbols-outlined transform group-open:rotate-180 transition-transform text-secondary"
                                 >expand_more</span
@@ -1767,13 +1714,12 @@
                             </p>
                           </details>
                           <details
-                            class="group bg-white dark:bg-background-white/50 p-5 rounded-lg shadow-soft cursor-pointer"
+                            class="group bg-white p-5 rounded-lg shadow-soft cursor-pointer"
                           >
                             <summary
                               class="flex justify-between items-center font-semibold text-lg list-none"
-                              data-translate="faq3_q"
                             >
-                              Is there a fee to apply?
+                              <span data-translate="faq3_q">Is there a fee to apply?</span>
                               <span
                                 class="material-symbols-outlined transform group-open:rotate-180 transition-transform text-secondary"
                                 >expand_more</span
@@ -1799,11 +1745,11 @@
           <!-- Contact Us Section -->
           <section
             id="contact"
-            class="px-4 py-20 bg-background-light dark:bg-background-dark"
+            class="px-4 py-20 bg-background-light"
           >
             <div class="max-w-7xl mx-auto">
               <h2
-                class="text-text-light dark:text-text-dark text-5xl text-center font-bold leading-tight pb-12"
+                class="text-text-light text-5xl text-center font-bold leading-tight pb-12"
                 data-translate="get_in_touch_title"
               >
                 Get in Touch
@@ -1811,37 +1757,40 @@
 
               <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div
-                  class="bg-white dark:bg-background-white p-6 rounded-xl shadow-lg"
+                  class="bg-white p-6 rounded-xl shadow-lg"
                 >
                   <form class="space-y-4">
                     <div>
-                      <label
-                        class="block text-text-light dark:text-text-dark mb-2" data-translate="your_name_label"
+                      <label for="contact-name"
+                        class="block text-text-light mb-2" data-translate="your_name_label" 
                         >Your Name</label
                       >
                       <input
+                        id="contact-name"
                         type="text"
                         class="w-full p-3 rounded-lg border-2 border-primary/20 focus:border-primary focus:ring-0"
                         placeholder="Little Sprout's Parent" data-translate="your_name_placeholder"
                       />
                     </div>
                     <div>
-                      <label
-                        class="block text-text-light dark:text-text-dark mb-2" data-translate="email_address_label"
+                      <label for="contact-email"
+                        class="block text-text-light mb-2" data-translate="email_address_label"
                         >Email Address</label
                       >
                       <input
+                        id="contact-email"
                         type="email"
                         class="w-full p-3 rounded-lg border-2 border-primary/20 focus:border-primary focus:ring-0"
                         placeholder="hello@littlesprouts.com" data-translate="email_address_placeholder"
                       />
                     </div>
                     <div>
-                      <label
-                        class="block text-text-light dark:text-text-dark mb-2" data-translate="message_label"
+                      <label for="contact-message"
+                        class="block text-text-light mb-2" data-translate="message_label"
                         >Message</label
                       >
                       <textarea
+                        id="contact-message"
                         rows="4"
                         class="w-full p-3 rounded-lg border-2 border-primary/20 focus:border-primary focus:ring-0"
                         placeholder="How can we help you grow?" data-translate="message_placeholder"
@@ -1864,7 +1813,7 @@
                     <h3 class="text-2xl font-bold mb-4 text-accent-blue" data-translate="visit_us_title">
                       Visit Us
                     </h3>
-                    <p class="text-text-light dark:text-text-dark" data-translate="address">
+                    <p class="text-text-light" data-translate="address" data-allow-html="true">
                       123 Sunshine Boulevard<br />Garden City, CA 90210
                     </p>
                   </div>
@@ -1874,7 +1823,7 @@
                     <h3 class="text-2xl font-bold mb-4 text-accent-green" data-translate="contact_info_title">
                       Contact Info
                     </h3>
-                    <p class="text-text-light dark:text-text-dark" data-translate="contact_info_details">
+                    <p class="text-text-light" data-translate="contact_info_details" data-allow-html="true">
                       Phone: (555) 123-4567<br />Email: hello@littlesprouts.com
                     </p>
                   </div>
@@ -1882,7 +1831,7 @@
                     class="bg-primary/10 p-6 rounded-xl transform hover:-translate-y-2 transition-transform duration-300"
                   >
                     <h3 class="text-2xl font-bold mb-4 text-primary" data-translate="hours_title">Hours</h3>
-                    <p class="text-text-light dark:text-text-dark" data-translate="hours_details">
+                    <p class="text-text-light" data-translate="hours_details" data-allow-html="true">
                       Monday-Friday: 7:30 AM - 6:00 PM<br />Saturday: Closed<br />Sunday:
                       Closed
                     </p>
@@ -1894,7 +1843,7 @@
         </main>
 
         <footer
-          class="bg-subtle-light dark:bg-subtle-dark/20 border-t border-subtle-light dark:border-subtle-dark"
+          class="bg-subtle-light border-t border-subtle-light"
         >
           <div
             class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"

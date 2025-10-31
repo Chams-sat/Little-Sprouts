@@ -4,7 +4,7 @@
   "description": "A vibrant, responsive website for Little Sprouts Kindergarten, designed to showcase the nurturing environment, programs, and activities offered to young children. This project serves as a prototype demonstrating modern web development skills, including internationalization (English and Arabic), responsive design, and interactive features.",
   "main": "main.js",
   "scripts": {
-    "build-css": "tailwindcss -i dist/output.css -o dist/output.css --minify",
+    "build-css": "tailwindcss -i src/input.css -o dist/output.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

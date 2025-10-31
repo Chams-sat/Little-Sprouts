@@ -1,2 +1,22 @@
-node_modules/
+# Dependencies
+/node_modules
+
+# Build output
+# The 'dist' folder is currently committed for simple GitHub Pages deployment.
+# If you set up an automated build process (e.g., GitHub Actions),
+# you would typically uncomment the line below.
+# /dist
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+
+# Editor directories and files
+.vscode/
+.idea/
 .DS_Store

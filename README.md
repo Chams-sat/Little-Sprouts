@@ -34,7 +34,7 @@ A vibrant, responsive website for Little Sprouts Kindergarten, designed to showc
 - **HTML5**: Semantic markup for structure.
 - **CSS3**: Custom styles with CSS variables for theming, integrated with Tailwind CSS for utility-first styling.
 - **JavaScript (ES6+)**: Interactive functionality including language switching, mobile menu, and form submissions.
-- **Tailwind CSS**: Utility-first CSS framework for rapid UI development (loaded via CDN for simplicity).
+- **Tailwind CSS**: A utility-first CSS framework used with a local build process for optimized production code.
 - **Google Fonts**: Fredoka and Gaegu fonts for a playful, child-friendly typography.
 - **Material Symbols**: Icons for visual elements.
 
@@ -42,31 +42,32 @@ A vibrant, responsive website for Little Sprouts Kindergarten, designed to showc
 
 ### Prerequisites
 
+- [Node.js](https://nodejs.org/) and npm (or a similar package manager).
 - A modern web browser (Chrome, Firefox, Safari, Edge).
-- Optional: Python 3 or Node.js for local development server.
 
 ### Installation
 
-1. **Clone or Download the Project**:
+1. **Clone the Project**:
    ```bash
-   git clone <your-repo-url>
-   cd little-sprouts-kindergarten
+   git clone https://github.com/Chams-sat/Little-Sprouts.git
+   cd Little-Sprouts
    ```
 
-2. **Serve the Files Locally** (Optional, for development):
-   - Using Python:
-     ```bash
-     python3 -m http.server 8000
-     ```
-     Then open `http://localhost:8000` in your browser.
-   - Using Node.js (if you have `http-server` installed):
-     ```bash
-     npx http-server
-     ```
+2. **Install Dependencies**:
+   This will install Tailwind CSS and its dependencies.
+   ```bash
+   npm install
+   ```
+
+3. **Build the CSS**:
+   This command compiles the Tailwind CSS into the `dist/output.css` file.
+   ```bash
+   npm run build-css
+   ```
 
 3. **View the Website**:
    - Simply open `index.html` in your browser for a quick preview.
-   - For full functionality (e.g., language switching), serve it via a local server to avoid CORS issues.
+   - For the best experience, it's recommended to use a local server. Many code editors (like VS Code with the "Live Server" extension) have this built-in.
 
 ### Usage
 
@@ -104,22 +105,18 @@ A vibrant, responsive website for Little Sprouts Kindergarten, designed to showc
 4. **Access Your Site**:
    - Your site will be available at `https://yourusername.github.io/your-repo-name/`.
 
-**Note**: The site uses local CSS (built from Tailwind) for production reliability. Ensure to run `npm run build-css` before deploying to update styles.
+**Note**: Ensure you run `npm run build-css` before deploying to generate the latest styles.
 
 ## 📁 Project Structure
 
 ```
-little-sprouts-kindergarten/
-├── index.html          # Main HTML file
-├── style.css           # Custom CSS styles and variables
-├── main.js             # JavaScript for interactivity
-├── README.md           # This file
-└── .DS_Store          # macOS system file (can be ignored)
+little-sprouts-kindergarten/ +Little-Sprouts/ +├── dist/ +│ └── output.css # Compiled and minified CSS +├── src/ +│ └── input.css # Source CSS with Tailwind directives ├── index.html # Main HTML file ├── style.css # Custom CSS styles and variables ├── main.js # JavaScript for interactivity +├── tailwind.config.js # Tailwind CSS configuration +├── package.json # Project dependencies and scripts ├── README.md # This file -└── .DS_Store # macOS system file (can be ignored) +└── ... # Other configuration files
 ```
 
 ## 🎨 Customization
 
 - **Colors**: Modify CSS variables in `style.css` (e.g., `--primary: #FF6B6B`) to change the theme.
+-- **Theme & Colors**: Modify the `theme.extend` object in `tailwind.config.js` to change colors, fonts, etc. Remember to run `npm run build-css` after any changes.
 - **Content**: Update text in `index.html` and translations in `main.js`.
 - **Fonts**: Change font imports in `index.html` and `.font-display` class in `style.css`.
 - **Images**: Replace placeholder images with actual photos (currently using external URLs).

@@ -316,41 +316,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  const updateUIForLanguage = (lang) => {
+    const isRTL = lang === 'ar';
+    html.lang = lang;
+    html.dir = isRTL ? 'rtl' : 'ltr';
+    langSwitcher.querySelector('span').textContent = isRTL ? 'English' : 'العربية';
+    applyTranslations(lang);
+  };
+
   const applyTranslations = (lang) => {
     document.querySelectorAll('[data-translate]').forEach(element => {
       const key = element.getAttribute('data-translate');
       if (translations[lang] && translations[lang][key]) {
         const translation = translations[lang][key];
-
-        if (element.tagName === 'LI' || element.tagName === 'SUMMARY') {
-          // For list items and summaries, we want to preserve the icon
-          const textNode = Array.from(element.childNodes).find(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
-          if (textNode) {
-            textNode.textContent = ` ${translation}`;
-          }
+        // Using textContent is safer than innerHTML as it prevents XSS vulnerabilities.
+        // The <br> tags in the translations will be rendered as text, so they should be handled in the HTML structure.
+        // For elements that need to contain HTML (like the address), we can make an exception.
+        if (element.getAttribute('data-allow-html')) {
+            element.innerHTML = translation;
         } else {
-          element.textContent = translation;
+            element.textContent = translation;
         }
       }
     });
   };
 
   langSwitcher.addEventListener('click', () => {
-    const currentLang = html.lang;
-
-    if (currentLang === 'en') {
-      html.lang = 'ar';
-      html.dir = 'rtl';
-      langSwitcher.querySelector('span').textContent = 'English';
-      applyTranslations('ar');
-    } else {
-      html.lang = 'en';
-      html.dir = 'ltr';
-      langSwitcher.querySelector('span').textContent = 'العربية';
-      applyTranslations('en');
-    }
+    const newLang = html.lang === 'en' ? 'ar' : 'en';
+    updateUIForLanguage(newLang);
   });
 
+  // Mobile Menu
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
   const openIcon = mobileMenuButton.querySelector('svg:first-child');
@@ -362,6 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
     closeIcon.classList.toggle('hidden');
   });
 
+  // Form Submissions (for demo purposes)
   const newsletterForm = document.querySelector('#news form');
   const contactForm = document.querySelector('#contact form');
 
@@ -382,4 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
     alert('Thank you for your message! We will get back to you soon.');
     contactForm.reset();
   });
+
+  // Set initial language on page load
+  updateUIForLanguage(html.lang || 'en');
 });
